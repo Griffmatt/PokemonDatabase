@@ -18,7 +18,7 @@ class Main extends Component {
             return (
                 <PokemonInfo
                     pokemon={this.state.pokemon.filter(pokemon => pokemon.id === +match.params.id)[0]}
-                    
+                    pokemonArr={this.state.pokemon}
                 />  
             );
         };

@@ -7,15 +7,15 @@ function RenderPokemonItem({pokemon}) {
     return (
         <CardDeck className="pt-2 shadow">
             <Link to={`/kantoPokedex/${pokemon.id}`}>         
-            <Card>
-                <CardHeader>
-                <CardImg top width="100%" src={pokemon.image} alt={pokemon.name}  />
-                </CardHeader>
-                <CardBody>
-                    <CardTitle tag="h5" className="pokedexTitle">{pokemon.name} {pokemon.number}</CardTitle>
-                        <RenderButton pokemon={pokemon}/>
-                </CardBody>
-            </Card>
+                <Card>
+                    <CardHeader>
+                    <CardImg top width="100%" src={pokemon.image} alt={pokemon.name}  />
+                    </CardHeader>
+                    <CardBody>
+                        <CardTitle tag="h5" className="blackLink">{pokemon.name} {pokemon.number}</CardTitle>
+                            <RenderButton pokemon={pokemon}/>
+                    </CardBody>
+                </Card>
             </Link>
         </CardDeck>
     );

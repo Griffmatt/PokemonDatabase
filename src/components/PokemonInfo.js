@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, CardImg, CardTitle, CardHeader, CardBody, Row, Container, Col, CardText, Button } from 'reactstrap';
+import { Card, CardImg, CardTitle, CardHeader, CardBody, Row, Container, Col, CardText, Button, ButtonGroup} from 'reactstrap';
 
-function RenderPokemonInfo({pokemon}) {
+function RenderPokemonInfo({pokemon, pokemonArr}) {
     return (
         <Card>
             <CardHeader>
@@ -39,65 +39,116 @@ function RenderPokemonInfo({pokemon}) {
                             </Col>
                             </Row>
                             <Row>
-                                <dl>
+                                <dt>Description</dt>
+                                <CardText>{pokemon.description}</CardText>
+                            </Row>
+                            <Row>
                                     <dt>Type</dt>
-                                    <dd><RenderType pokemon={pokemon}/></dd>
+                                        <div className="col-10 col-sm-8 offset-1 offset-sm-2 col-xl-6 offset-xl-3">
+                                            <RenderType pokemon={pokemon}/> 
+                                        </div>                      
                                     <dt>Weaknesses</dt>
-                                    <dd><RenderWeakeness pokemon={pokemon}/></dd>
-                                </dl>
+                                        <div className="col-10 col-sm-8 offset-1 offset-sm-2 col-xl-6 offset-xl-3 ">
+                                            <RenderWeakeness pokemon={pokemon} className="col col-lg-4"/>
+                                        </div>                                
                             </Row>
                         </Card>
                     </Col>
                 </Row>
                 <Row>
-                    <CardText>
-                        
-                    </CardText>
-                </Row>
-                <Row>
-
+                    <h2 bolder="true">Evolution Line</h2>
+                    <div className="col-xl-12 offset-xl-1">
+                        <RenderEvolotions pokemonArr={pokemonArr} pokemonId={pokemon.evolutionId} />
+                    </div>
                 </Row>
             </CardBody>
         </Card>
     );
 }
 
+
 function RenderType({pokemon}){
     const type = pokemon.type.map(type => {
         return (
-            <div key={pokemon.id} className="d-inline">
-                <Button className={type} >{type} </Button>{" "}
+            <div key={type} className="p-1 col-6 mx-auto">
+                <Button  className={`p-1 ${type}`}>{type} </Button>
             </div>
         );
     }); 
     return(
-        <>
-            {type}   
-        </>
+        <div>
+            <Row>
+                {type} 
+            </Row>  
+        </div>
     )
     
 }
-
 function RenderWeakeness({pokemon}){
     const weakness = pokemon.weakness.map(weakness => {
         return (
-            <div key={pokemon.id} className="d-inline">
-                <Button className={weakness} >{weakness} </Button>{" "}
+            <div className="p-1 col-6 mx-auto" key={weakness}>
+                <Button className={weakness}>{weakness} </Button>{" "}
             </div>
         );
     }); 
     return(
         <>
-            {weakness}   
+            <div>
+                <Row>
+                    {weakness}
+                </Row>
+            </div>   
         </>
     )
         
+}
+function RenderEvolotions ({pokemonArr, pokemonId}) {
+    const evolutions = pokemonArr.filter(evolution => evolution.evolutionId === pokemonId).map(evolution => {
+        if(evolution.evolves===true && window.innerWidth > 800){
+        
+        return(
+            <div key={evolution.id} className="col-xl-4 mx-auto">
+                <div className="row">
+                <div className="col-xl-6">
+                <Link to={`/kantoPokedex/${evolution.id}`}>
+                    <CardImg  src={evolution.image} alt={evolution.name} className="evoLink" />
+                    <CardText className="blackLink">{evolution.number} <br/> {evolution.name}</CardText>
+                </Link>
+                </div>
+                <div className="col align-self-center">
+                    <i className="fa fa-arrow-right fa-lg" aria-hidden="true"/>
+                </div>
+                </div>
+            </div>
+        )
+        }
+        else{
+            return(
+                <div key={evolution.id} className="col-xl-4 col-6 offset-3 offset-xl-0">
+                    <div className="col-xl-6">
+                    <Link to={`/kantoPokedex/${evolution.id}`}>
+                        <CardImg  src={evolution.image} alt={evolution.name} className="evoLink" />
+                        <CardText className="blackLink">{evolution.number} <br/> {evolution.name}</CardText>
+                    </Link>
+                    </div>
+                </div>
+            )
+        }
+    })
+    return(
+        <div>
+            <Row>
+                {evolutions}
+            </Row>
+        </div>
+    )
 }
 
 function PokemonInfo(props){
     return(
         <Container>
-                <RenderPokemonInfo pokemon={props.pokemon} />
+                <RenderPokemonInfo pokemon={props.pokemon} pokemonArr={props.pokemonArr}/>
         </Container>
     )
 }

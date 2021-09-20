@@ -36,17 +36,26 @@
     transform: rotate(360deg);
   }
 }
+Button {
+  width:6em !important;
+}
+
 
 .Grass {
-  background-color: green !important;
+  background-color: rgb(25, 165, 25) !important;
+  
 }
 
 .Poison {
   background-color: rgb(143, 8, 143) !important;
 }
 
+.Fighting {
+  background-color: rgb(197, 108, 5) !important;
+}
+
 .Fire {
-  background-color: darkorange !important;
+  background-color: rgb(255, 123, 0) !important;
 }
 
 .Water {
@@ -54,7 +63,7 @@
 }
 
 .Flying {
-  background-color: rgb(85, 159, 172) !important;
+  background-color: rgb(86, 139, 139) !important;
 }
 
 .Dragon {
@@ -70,15 +79,23 @@
 }
 
 .Ground{
-  background-color: rgb(158, 115, 65) !important;
+  background-color: rgb(163, 98, 23) !important;
 }
 
 .Rock {
-  background-color: rgb(71, 59, 46) !important;
+  background-color: rgb(121, 90, 57) !important;
 }
 
 .Electric {
   background-color: rgb(212, 199, 13) !important;
+}
+
+.Bug {
+  background-color: rgb(80, 136, 40) !important;
+}
+
+.Normal {
+  background-color: rgb(168, 166, 131) !important;
 }
 
 .infoTitle {
@@ -86,8 +103,13 @@
     font-weight: 700;
 }
 
-.pokedexTitle{
+.blackLink{
   color: black;
+}
+
+.evoLink{
+  background-color: rgba(207, 207, 207, 0.507);
+  border-radius:100%;
 }
 
 a {
