@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Grass {
+  background-color: green !important;
+}
+
+.Poison {
+  background-color: rgb(143, 8, 143) !important;
+}
+
+.Fire {
+  background-color: darkorange !important;
+}
+
+.Water {
+  background-color: rgb(33, 117, 251) !important;
+}
+
+.Flying {
+  background-color: rgb(85, 159, 172) !important;
+}
+
+.Dragon {
+  background-color: darkgoldenrod !important;
+}
+
+.Psychic{
+  background-color: rgb(162, 106, 226) !important;
+}
+
+.Ice{
+  background-color: rgb(106, 199, 230) !important;
+}
+
+.Ground{
+  background-color: rgb(158, 115, 65) !important;
+}
+
+.Rock {
+  background-color: rgb(71, 59, 46) !important;
+}
+
+.Electric {
+  background-color: rgb(212, 199, 13) !important;
+}
+
+.infoTitle {
+    font-size: calc(2em + 1vmin);
+    font-weight: 700;
+}
+
+.pokedexTitle{
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+i{
+  color:black;
+}
+
+i:hover{
+  color:rgb(37, 37, 37)
+}
