@@ -57,7 +57,7 @@ function RenderPokemonInfo({pokemon, pokemonArr}) {
                 </Row>
                 <Row>
                     <h2 bolder="true">Evolution Line</h2>
-                    <div className="col-xl-12 offset-xl-1">
+                    <div className="" tg="ul">
                         <RenderEvolotions pokemonArr={pokemonArr} pokemonId={pokemon.evolutionId} />
                     </div>
                 </Row>
@@ -71,7 +71,7 @@ function RenderType({pokemon}){
     const type = pokemon.type.map(type => {
         return (
             <div key={type} className="p-1 col-6 mx-auto">
-                <Button  className={`p-1 ${type}`}>{type} </Button>
+                <Button  className={type}>{type} </Button>
             </div>
         );
     }); 
@@ -108,30 +108,25 @@ function RenderEvolotions ({pokemonArr, pokemonId}) {
         if(evolution.evolves===true && window.innerWidth > 800){
         
         return(
-            <div key={evolution.id} className="col-xl-4 mx-auto">
-                <div className="row">
-                <div className="col-xl-6">
+            <div key={evolution.id} className="col-4">
+                <li className="col-6">
                 <Link to={`/kantoPokedex/${evolution.id}`}>
                     <CardImg  src={evolution.image} alt={evolution.name} className="evoLink" />
                     <CardText className="blackLink">{evolution.number} <br/> {evolution.name}</CardText>
                 </Link>
-                </div>
-                <div className="col align-self-center">
-                    <i className="fa fa-arrow-right fa-lg" aria-hidden="true"/>
-                </div>
-                </div>
+                </li>
             </div>
         )
         }
         else{
             return(
-                <div key={evolution.id} className="col-xl-4 col-6 offset-3 offset-xl-0">
-                    <div className="col-xl-6">
+                <div key={evolution.id} className="col-4">
+                    <li className="col-6">
                     <Link to={`/kantoPokedex/${evolution.id}`}>
                         <CardImg  src={evolution.image} alt={evolution.name} className="evoLink" />
                         <CardText className="blackLink">{evolution.number} <br/> {evolution.name}</CardText>
                     </Link>
-                    </div>
+                    </li>
                 </div>
             )
         }

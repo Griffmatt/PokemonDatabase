@@ -71,7 +71,7 @@ Button {
 }
 
 .Psychic{
-  background-color: rgb(162, 106, 226) !important;
+  background-color: rgb(162, 95, 179) !important;
 }
 
 .Ice{
@@ -98,6 +98,22 @@ Button {
   background-color: rgb(168, 166, 131) !important;
 }
 
+.Fairy {
+  background-color: rgb(199, 64, 154) !important;
+}
+
+.Ghost {
+  background-color: rgb(94, 62, 104) !important;
+}
+
+.Dark {
+  background-color: rgb(17, 17, 17) !important;
+}
+
+.Steel {
+  background-color: rgb(165, 165, 165) !important;
+}
+
 .infoTitle {
     font-size: calc(2em + 1vmin);
     font-weight: 700;
@@ -110,6 +126,11 @@ Button {
 .evoLink{
   background-color: rgba(207, 207, 207, 0.507);
   border-radius:100%;
+}
+
+.evolutions{
+  display: flexbox !important;
+  justify-content: center;
 }
 
 a {
