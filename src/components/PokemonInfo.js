@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Card, CardImg, CardTitle, CardHeader, CardBody, Row, Container, Col, CardText, Button, ButtonGroup} from 'reactstrap';
+import { Link} from 'react-router-dom';
+import { useHistory } from 'react-router';
+import { Card, CardImg, CardTitle, CardHeader, CardBody, Row, Container, Col, CardText, Button} from 'reactstrap';
 
 function RenderPokemonInfo({pokemon, pokemonArr}) {
     return (
         <Card>
-            <CardHeader>
+            <CardHeader className="pokedexHeader">
                 <Row>
-                    <Link to="/kantoPokedex" className="d-flex"><i className="fa fa-arrow-left fa-lg" aria-hidden="true"/></Link> 
+                    <Link to={"/kantoPokedex"} className="d-flex"><i className="fa fa-arrow-left fa-lg text-white" aria-hidden="true"/></Link> 
                     <CardTitle className="infoTitle">
                         {pokemon.name} {pokemon.number}
                     </CardTitle>
@@ -55,9 +56,11 @@ function RenderPokemonInfo({pokemon, pokemonArr}) {
                         </Card>
                     </Col>
                 </Row>
+             </CardBody>
+            <CardBody className="evoLineBackground"> 
                 <Row>
                     <h2 bolder="true">Evolution Line</h2>
-                    <div className="" tg="ul">
+                    <div className="list-unstyled" tg="ul">
                         <RenderEvolotions pokemonArr={pokemonArr} pokemonId={pokemon.evolutionId} />
                     </div>
                 </Row>
@@ -108,22 +111,22 @@ function RenderEvolotions ({pokemonArr, pokemonId}) {
         if(evolution.evolves===true && window.innerWidth > 800){
         
         return(
-            <div key={evolution.id} className="col-4">
-                <li className="col-6">
-                <Link to={`/kantoPokedex/${evolution.id}`}>
-                    <CardImg  src={evolution.image} alt={evolution.name} className="evoLink" />
-                    <CardText className="blackLink">{evolution.number} <br/> {evolution.name}</CardText>
-                </Link>
+            <div key={evolution.id} className="col">
+                <li className="col mx-auto">
+                    <Link to={`/kantoPokedex/${evolution.id}`}>
+                        <CardImg  src={evolution.image} alt={evolution.name} className="evoBackground" />
+                        <CardText className="blackLink">{evolution.number} <br/> {evolution.name}</CardText>
+                    </Link>
                 </li>
             </div>
         )
         }
         else{
             return(
-                <div key={evolution.id} className="col-4">
-                    <li className="col-6">
+                <div key={evolution.id} className="col">
+                    <li className="col mx-auto">
                     <Link to={`/kantoPokedex/${evolution.id}`}>
-                        <CardImg  src={evolution.image} alt={evolution.name} className="evoLink" />
+                        <CardImg  src={evolution.image} alt={evolution.name} className="evoBackground" />
                         <CardText className="blackLink">{evolution.number} <br/> {evolution.name}</CardText>
                     </Link>
                     </li>

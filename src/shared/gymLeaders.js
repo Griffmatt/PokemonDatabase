@@ -9,6 +9,7 @@ export const GYM_LEADERS = [
         description: "Brock is one of the few truly serious professional Pokémon Trainers in the Pewter City area, and many people respect and admire him. He is quite proud of his rock-hard willpower, and uses Rock-type Pokémon to complement this. He rarely laughs or drops his serious demeanor, but when he does, he finds it hard to stop. In his free time, he likes to dig for Fossils in Mt. Moon.",
         favoritePokemon: "Onix",
         pokemonImage: "/assets/images/095.png",
+        pokemonId: 94,
         image: "/assets/images/Brock.png",
         gymBadge: "/assets/images/Boulderbadge.png" 
     },
@@ -22,6 +23,7 @@ export const GYM_LEADERS = [
         description: "Misty's strategy is an all-out attack with Water-type Pokémon, and she is constantly looking for ways to improve her technique. A swimmer herself, she trains at the Seafoam Islands. She admires Lorelei of the Elite Four. It is said that she has high hopes for Cerulean Cape, a romantic date spot. She also expresses a desire to travel one day once she has become stronger.",
         favoritePokemon: "Starmie",
         pokemonImage: "/assets/images/121.png",
+        pokemonId: 120,
         image: "/assets/images/Misty.png",
         gymBadge: "/assets/images/Cascadebadge.png" 
     },
@@ -34,6 +36,7 @@ export const GYM_LEADERS = [
         pokemonType: "Electric",
         description: "Lt. Surge is known as the \"Lightning Lieutenant\". Apparently, he is or was an American soldier who fought in at least one war, during which Electric-type Pokémon saved his life. As a member of the army, Surge was a strict CO, and was rather cautious. He was a pilot as well, and used Electric-type Pokémon to power his planes, a practice that in at least one occasion saved his life. Also, Surge saved the life of one of the Trainers in his Gym who was in the army at the same time. A little paranoid, Lt. Surge installed a series of traps in the Gym. He takes a liking to Trainers with a lot of guts.",
         pokemonImage: "/assets/images/026.png",
+        pokemonId: 25,
         image: "/assets/images/Lt._Surge.png",
         gymBadge: "/assets/images/Thunderbadge.png" 
     },
@@ -47,8 +50,9 @@ export const GYM_LEADERS = [
         description: "Erika is ladylike, and a teacher of flower-arranging. She is a quiet girl, but she's well-known in Celadon City. Erika only collects Pokémon if she considers them attractive, though her definition of attractive seems to include varieties only a botanist could love. She also tends to doze off quite a bit, implying she may be narcoleptic (or simply being affected by the powders given off by the grass Pokémon), but will become inspired after a good match.",
         favoritePokemon: "Vileplume",
         pokemonImage: "/assets/images/045.png",
+        pokemonId: 44,
         image: "/assets/images/Erika.png",
-        gymBadge: "/assets/images/Rainbowbadge.png" 
+        gymBadge: "/assets/images/Rainbow_badge.png" 
     },
     {
         id:4,
@@ -60,6 +64,7 @@ export const GYM_LEADERS = [
         description: "Koga has studied medicine and antidotes; he makes his own potions to heal his Pokémon. He also serves as a teacher. Many students come to him to be trained in the arts of Ninjutsu and Pokémon. One of his students is his own daughter, Janine. In addition to these roles, Koga also patrols the grounds of the Kanto Safari Zone, to ensure that the players of the Safari Game are safe from the wild Pokémon within.",
         favoritePokemon: "Weezing",
         pokemonImage: "/assets/images/110.png",
+        pokemonId: 109,
         image: "/assets/images/Koga.png",
         gymBadge: "/assets/images/Soulbadge.png" 
     },
@@ -73,6 +78,7 @@ export const GYM_LEADERS = [
         description: "Sabrina is the Gym Leader of the Saffron Gym. Known as \"The Master of Psychic Pokémon\", she has had psychic powers ever since she was a child, when she accidentally bent a spoon. She apparently dislikes battling, but is hard to beat because she can communicate with her Pokémon telepathically. Her fame has grown so much that even Trainers living in the Sevii Islands have heard of her. Previously, there were two Gyms in Saffron City, a Fighting-type Gym and a Psychic-type Gym. Sabrina used her advantage to defeat the rival Gym and strip them of their Gym status, turning them to the Fighting Dojo.",
         favoritePokemon: "Alakazam",
         pokemonImage: "/assets/images/065.png",
+        pokemonId: 64,
         image: "/assets/images/Sabrina.png",
         gymBadge: "/assets/images/Marshbadge.png" 
     },
@@ -86,6 +92,7 @@ export const GYM_LEADERS = [
         description: "Blaine's title is \"The Hotheaded Quiz Master.\" His strategy is to incinerate challengers with his rough-and-ready Fire-type Pokémon. To reach Blaine, challengers have to answer a series of quiz questions about Pokémon. Blaine only takes off his sunglasses when thinking up new quiz questions.When he once got lost in a treacherous, freezing mountain range, he was guided out of the mountains by a Moltres. Apparently, this is what inspired him to train Fire-type Pokémon. Blaine is a resident of Cinnabar Island, and has lived there since before the Cinnabar Lab was built. He is good friends with Mr. Fuji and used to do Pokémon research with him",
         favoritePokemon: "Arcanine",
         pokemonImage: "/assets/images/059.png",
+        pokemonId: 58,
         image: "/assets/images/Blaine.png",
         gymBadge: "/assets/images/Volcanobadge.png" 
     },
@@ -98,7 +105,8 @@ export const GYM_LEADERS = [
         pokemonType: "Ground",
         description: "Giovanni (Japanese: サカキ Sakaki) is the former head of Team Rocket, who served as the secretive Gym Leader of Viridian City's Gym, known officially as the Viridian Gym. He handed out the Earth Badge to Trainers who defeated him. As a Gym Leader, he specialized in Ground-type Pokémon, but his master plan includes collecting rare Pokémon of all types",
         favoritePokemon: "Kangaskahn",
-        pokemonImage: "/assets/images/095.png",
+        pokemonImage: "/assets/images/114.png",
+        pokemonId: 94,
         image: "/assets/images/Giovanni.png",
         gymBadge: "/assets/images/Earthbadge.png" 
     },
@@ -112,7 +120,8 @@ export const GYM_LEADERS = [
         description: "Lorelei is the first Trainer of the Kanto Elite Four. She is known for her logical, calculated, and cool style of battling. Her Lapras has been with her ever since she was a child. She caught it when she was very young in the Icefall Cave. Misty idolizes her.",
         favoritePokemon: "Lapras",
         pokemonImage: "/assets/images/131.png",
-        image: "/assets/images/Lorelei.png"
+        pokemonId: 130,
+        image: "/assets/images/Lorelei.png",
     },
     {
         id:9,
@@ -124,6 +133,7 @@ export const GYM_LEADERS = [
         description: "Bruno is the second member of the Kanto Elite Four. He raises Fighting-type Pokémon, living with them and training with them. He joined the Elite Four out of a desire to challenge the best Trainers. Although he trains Fighting Pokémon, he also commonly uses Onix and its evolved form. His strongest Pokémon is always his signature Pokémon Machamp.",
         favoritePokemon: "Machamp",
         pokemonImage: "/assets/images/068.png",
+        pokemonId: 67,
         image: "/assets/images/Bruno.png"
     },
     {
@@ -136,6 +146,7 @@ export const GYM_LEADERS = [
         description: "Agatha is the third trainer of the Kanto Elite Four, and the oldest such known to date. As such, she serves as an inspiration for senior Pokémon Trainers all around the region. She uses Ghost-type Pokémon and other Pokémon with horrifying appearances. She has a very short temper. Agatha and Professor Oak were once friendly rivals in their youth. However, their relationship has grown bitter and strained over the years because Agatha believes he was too weak to continue competing.",
         favoritePokemon: "Gengar",
         pokemonImage: "/assets/images/094.png",
+        pokemonId: 93,
         image: "/assets/images/Agatha.png"
     },
     {
@@ -148,6 +159,7 @@ export const GYM_LEADERS = [
         description: "Lance prefers the superiority of Dragon-type Pokémon, believing them to be virtually indestructible. Known as a cool and heroic Trainer, Lance has a large fan-following. Lance also seems to have a liking for capes, as he is often seen buying identical capes at the Celadon Department Store. Lance's grandfather is the elder of a famous clan of Dragon Masters. Clair is his cousin, and his hometown is Blackthorn City.",
         favoritePokemon: "Dragonite",
         pokemonImage: "/assets/images/149.png",
+        pokemonId: 148,
         image: "/assets/images/Lance.png"
     },
     {
@@ -159,7 +171,8 @@ export const GYM_LEADERS = [
         pokemonType: "Assorted",
         description: "Blue is a very cocky and somewhat unfriendly young man, typically bidding people farewell with \"Smell ya later!\", and his primary motivation throughout the game is to become the greatest Trainer. Aside from that main goal, he also seems to take satisfaction from always being one step ahead of the player character. He eventually accomplishes his goal, defeating the Kanto Elite Four and becoming the Pokémon Champion, but is quickly defeated by the player, losing the position.",
         favoritePokemon: "Charizard",
-        pokemonImage: "/assets/images/009.png",
+        pokemonImage: "/assets/images/006.png",
+        pokemonId: 5,
         image: "/assets/images/Blue.png"
     },
 ]

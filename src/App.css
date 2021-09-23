@@ -123,7 +123,7 @@ Button {
   color: black;
 }
 
-.evoLink{
+.evoBackground{
   background-color: rgba(207, 207, 207, 0.507);
   border-radius:100%;
 }
@@ -143,3 +143,29 @@ i{
 i:hover{
   color:rgb(37, 37, 37)
 }
+
+li .card-img {
+  width: 13em;
+  height:auto;
+}
+
+dd .card-img{
+  width: 15em;
+  height:auto;
+}
+.badge .card-img{
+  width: 8em;
+  height:auto;
+}
+
+.evoLineBackground{
+  background: rgb(238, 238, 238);
+}
+
+.pokedexHeader{
+  background: rgb(77, 77, 77);
+  color: white;
+}
+
+
+
