@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
-import { useHistory } from 'react-router';
 import { Card, CardImg, CardTitle, CardHeader, CardBody, Row, Container, Col, CardText, Button} from 'reactstrap';
 
 function RenderPokemonInfo({pokemon, pokemonArr}) {

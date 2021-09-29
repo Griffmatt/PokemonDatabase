@@ -51,7 +51,7 @@ Button {
 }
 
 .Fighting {
-  background-color: rgb(197, 108, 5) !important;
+  background-color: rgb(219, 117, 0) !important;
 }
 
 .Fire {
@@ -67,7 +67,7 @@ Button {
 }
 
 .Dragon {
-  background-color: darkgoldenrod !important;
+  background-color: rgb(156, 141, 1) !important;
 }
 
 .Psychic{
@@ -87,7 +87,7 @@ Button {
 }
 
 .Electric {
-  background-color: rgb(212, 199, 13) !important;
+  background-color: rgb(207, 204, 4) !important;
 }
 
 .Bug {
@@ -165,6 +165,10 @@ dd .card-img{
 .pokedexHeader{
   background: rgb(77, 77, 77);
   color: white;
+}
+
+input {
+  text-align: center;
 }
 
 

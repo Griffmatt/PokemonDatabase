@@ -3,41 +3,44 @@ import { Link } from 'react-router-dom';
 import { Card, CardDeck, CardImg, CardTitle, CardHeader, CardBody, Row, Col, Container, Button } from 'reactstrap';
 
 
-function RenderLeaderItem({leader}) {
+function RenderleaderItem({leaders}) {
     return (
         <CardDeck className="pt-2 shadow">        
                 <Card>
                     <CardHeader>
                         <div>
-                            <CardTitle tag="h5" className="blackLink">{leader.name}</CardTitle>
+                            <CardTitle tag="h5" className="blackLink">{leaders.name}</CardTitle>
                         </div>
                     </CardHeader>
                     <CardBody>
                         <Row>
                             <div className="col-sm-2">
-                                <CardImg top width="50%" src={leader.image} alt={leader.name}  />                               
-                                <RenderButton leader={leader}/>
+                                <CardImg top width="50%" src={leaders.image} alt={leaders.name}  />                               
+                                <RenderButton leaders={leaders}/>
                             </div>
                             <div className="col-sm-10">
                                 <Row>
                                 <Col>
                                     <dl>                                      
                                         <dt>Favorite Pokemon</dt>
-                                        <dd><Link to={`/kantoPokedex/${leader.pokemonId}`} ><CardImg src={leader.pokemonImage} alt={`${leader.name}'S Favorite Pokemon'`} className="favPokemon" /></Link></dd>
+                                        <dd><Link to={`/kantoPokedex/${leaders.pokemonId}`} ><CardImg src={leaders.pokemonImage} alt={`${leaders.name}'S Favorite Pokemon'`} className="favPokemon" /></Link></dd>
                                     </dl>
                                 </Col>
                                 <Col>
                                     <dl>
                                         <dt>Region</dt>
-                                        <dd>{leader.region}</dd>
+                                        <dd>{leaders.region}</dd>
                                         <dt>City</dt>
-                                        <dd>{leader.city}</dd>
-                                        <RenderBadge leader={leader}/>
+                                        <dd>{leaders.city}</dd>
+                                        <RenderBadge leaders={leaders}/>
                                     </dl>
                                 </Col>
                                 </Row>
                                 <Row>
-                                    {leader.description}
+                                    <div className="col-10 mx-auto">
+                                        <hr/>
+                                        {leaders.description}
+                                    </div>
                                 </Row>
                             </div>
                         </Row>
@@ -47,20 +50,20 @@ function RenderLeaderItem({leader}) {
     );
 }
 
-function RenderButton({leader}){
+function RenderButton({leaders}){
     return(
-        <div>
-            <Button className={leader.pokemonType} >{leader.pokemonType}</Button>
+        <div className="mt-1">
+            <Button className={leaders.pokemonType} >{leaders.pokemonType}</Button>
         </div>
     )
 } 
 
-function RenderBadge({leader}){
-    if(leader.gymBadge){
+function RenderBadge({leaders}){
+    if(leaders.gymBadge){
         return(
             <>
                 <dt>Gym Badge</dt>
-                <dd className="badge"><CardImg src={leader.gymBadge} alt={`${leader.name}'S Gym Badge`}/></dd>
+                <dd className="badge"><CardImg src={leaders.gymBadge} alt={`${leaders.name}'S Gym Badge`}/></dd>
             </>
         )
     }
@@ -74,21 +77,24 @@ function RenderBadge({leader}){
     }
 }
 
-function KantoLeaders(props){
-    const leaders = props.leader.map(leader => {
+function Kantoleaders(props){
+    const leader = props.leaders.leaders.map(leaders => {
         return (
-            <div key={leader.id} className="col-12">
-                <RenderLeaderItem leader={leader} />
+            <div key={leaders.id} className="col-12">
+                <RenderleaderItem leaders={leaders} />
             </div>
         );
     }); 
     return(
         <Container>
             <Row>
-                {leaders}
+                <h2>Kanto leaders</h2>
+            </Row>
+            <Row>
+                {leader}
             </Row>
         </Container>
     )
 }
 
-export default KantoLeaders;
+export default Kantoleaders;

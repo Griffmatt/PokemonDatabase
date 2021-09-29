@@ -27,13 +27,13 @@ function Header(props){
             <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
                 <NavItem>
-                    <NavLink href="/components/">Pokedex</NavLink>
+                    <NavLink href="/kantoPokedex">Pokedex</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/KantoLeaders">Gym Leaders</NavLink>
+                    <NavLink href="/kantoLeaders">Gym Leaders</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="">Random Team</NavLink>
+                    <NavLink href="/YourTeams">Create Teams</NavLink>
                 </NavItem>
                 <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

@@ -825,7 +825,7 @@ export const POKEMON = [
     {
         id: 41,
         number: "#042",
-        name: "Beedrill",
+        name: "Golbat",
         description: "It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered.", 
         evolves: false,
         evolutionId: 40, 
@@ -985,7 +985,7 @@ export const POKEMON = [
     {
         id: 49,
         number: "#050",
-        name: "Ekans",
+        name: "Diglett",
         description: "If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops.", 
         evolves: true,
         evolutionId: 49, 
@@ -1545,7 +1545,7 @@ export const POKEMON = [
     {
         id: 77,
         number: "#078",
-        name: "Ponyta",
+        name: "Rapidash",
         description: "This Pokémon can be seen galloping through fields at speeds of up to 150 mph, its fiery mane fluttering in the wind.", 
         evolves: false,
         evolutionId: 76, 
