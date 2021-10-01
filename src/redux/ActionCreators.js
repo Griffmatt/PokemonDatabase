@@ -1,11 +1,11 @@
 import * as ActionTypes from './ActionTypes';
 
-export const addPokemonToTeam = pokemon => ({
-    type: ActionTypes.ADD_POKEMON_TO_TEAM,
+export const addPokemon = pokemon => ({
+    type: ActionTypes.ADD_POKEMON,
     payload: pokemon
 });
 
 export const gymLeaders = leaders => ({
-    type: ActionTypes.GYM_LEADERS,
+    type: ActionTypes.ADD_GYM_LEADERS,
     payload: leaders
 });

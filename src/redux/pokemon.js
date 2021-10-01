@@ -5,7 +5,7 @@ export const Pokemon = (state = {
     pokemon: POKEMON
 }, action) => {
 switch (action.type) {
-    case ActionTypes.ADD_POKEMON_TO_TEAM:
+    case ActionTypes.ADD_POKEMON:
         return {...state, pokemon: action.payload};
     default:
         return state;

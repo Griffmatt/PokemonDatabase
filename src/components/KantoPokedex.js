@@ -57,7 +57,7 @@ function KantoPokedex(props){
                         type="text"
                         value={filter}
                         onChange={event => setFilter(event.target.value)}
-                        autocomplete="off"
+                        autoComplete="off"
                     />
                 </Col>
             </Row>

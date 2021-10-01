@@ -4,6 +4,7 @@ import PokemonInfo from './PokemonInfo';
 import KantoLeaders from './KantoGymLeaders';
 import Teams from './Teams';
 import Header from './Header';
+
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -11,11 +12,11 @@ import { connect } from 'react-redux';
 const mapStateToProps = state => {
     return {
         pokemon: state.pokemon,
-        leaders: state.leaders,
-        filter: ''
+        leaders: state.leaders
        
     };
 };
+
 
 class Main extends Component {
     
