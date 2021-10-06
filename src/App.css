@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background:#f0f0f0 ;
 }
 
 .App-logo {
@@ -37,7 +38,7 @@
   }
 }
 Button {
-  width:6em !important;
+  width:6em;
 }
 
 
@@ -172,4 +173,9 @@ input {
 }
 
 
-
+.saveTeam{
+  background: #000000 !important;
+  color:white;
+  width: 15em;
+  height: auto;
+}

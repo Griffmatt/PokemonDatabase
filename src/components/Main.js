@@ -4,6 +4,7 @@ import PokemonInfo from './PokemonInfo';
 import KantoLeaders from './KantoGymLeaders';
 import Teams from './Teams';
 import Header from './Header';
+import { addSavedTeam } from '../redux/ActionCreators';
 
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -12,14 +13,18 @@ import { connect } from 'react-redux';
 const mapStateToProps = state => {
     return {
         pokemon: state.pokemon,
-        leaders: state.leaders
+        leaders: state.leaders,
+        savedTeams: state.savedTeams
        
     };
 };
 
+const mapDispatchToProps = {
+    addSavedTeam
+}
 
 class Main extends Component {
-    
+
      render(){
         
         const PokemonId = ({match}) => {
@@ -38,7 +43,7 @@ class Main extends Component {
                     <Route exact path='/kantoPokedex' render={() => <KantoPokedex pokemon={this.props.pokemon} />} />
                     <Route path="/kantoPokedex/:id"  component={PokemonId} />
                     <Route exact path='/kantoLeaders' render={() => <KantoLeaders leaders={this.props.leaders} />} />
-                    <Route exact path='/yourTeams' render={() => <Teams pokemon={this.props.pokemon} />} />
+                    <Route exact path='/yourTeams' render={() => <Teams pokemon={this.props.pokemon.pokemon} savedTeams={this.props.savedTeams.savedTeams} addSavedTeams={this.props.addSavedTeam}/>}/>
                     <Redirect to='/kantoPokedex' />
                 </Switch>          
             </div>
@@ -46,4 +51,4 @@ class Main extends Component {
     };
 }
 
-export default withRouter(connect(mapStateToProps)(Main));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));

@@ -80,7 +80,7 @@ function RenderBadge({leaders}){
 function Kantoleaders(props){
     const leader = props.leaders.leaders.map(leaders => {
         return (
-            <div key={leaders.id} className="col-12">
+            <div key={leaders.name} className="col-12">
                 <RenderleaderItem leaders={leaders} />
             </div>
         );

@@ -1,13 +1,18 @@
-import {createStore, combineReducers } from 'redux';
+import {createStore, combineReducers, applyMiddleware } from 'redux';
 import {Pokemon} from './pokemon';
-import{Leaders} from './gymLeaders'
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
+import {Leaders} from './gymLeaders'
+import { SavedTeams } from './savedTeams';
 
 export const ConfigureStore = () => {
     const store = createStore(
         combineReducers({
             pokemon: Pokemon,
-            leaders: Leaders
-        }),  
+            leaders: Leaders,
+            savedTeams: SavedTeams
+        }), 
+        applyMiddleware(thunk, logger) 
     );
 
     return store;
