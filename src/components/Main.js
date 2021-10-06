@@ -43,7 +43,7 @@ class Main extends Component {
                     <Route exact path='/kantoPokedex' render={() => <KantoPokedex pokemon={this.props.pokemon} />} />
                     <Route path="/kantoPokedex/:id"  component={PokemonId} />
                     <Route exact path='/kantoLeaders' render={() => <KantoLeaders leaders={this.props.leaders} />} />
-                    <Route exact path='/yourTeams' render={() => <Teams pokemon={this.props.pokemon.pokemon} savedTeams={this.props.savedTeams.savedTeams} addSavedTeams={this.props.addSavedTeam}/>}/>
+                    <Route exact path='/yourTeams' render={() => <Teams pokemon={this.props.pokemon.pokemon} savedTeams={this.props.savedTeams.savedTeams} addSavedTeam={this.props.addSavedTeam}/>}/>
                     <Redirect to='/kantoPokedex' />
                 </Switch>          
             </div>
@@ -51,4 +51,4 @@ class Main extends Component {
     };
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps )(Main));

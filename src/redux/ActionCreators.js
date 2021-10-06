@@ -11,7 +11,7 @@ export const gymLeaders = leaders => ({
 });
 
 export const addSavedTeam = savedTeams => dispatch => {
-    dispatch(addSavedTeam(savedTeams));   
+    dispatch(postSavedTeam(savedTeams));   
 };
 
 export const postSavedTeam = savedTeams => ({

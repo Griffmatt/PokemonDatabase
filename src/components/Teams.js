@@ -2,12 +2,18 @@ import React, {useState} from "react";
 import {CardImg, Row, Col, Container, Form} from 'reactstrap';
 import Select from "react-select";
 
-function Teams({pokemon, savedTeams}){
+function Teams({pokemon, savedTeams, addSavedTeam}){
+
     const [selected, setSelected] = useState([]);
 
     const saveTeam=()=>{
+        if(selected.length === 6 || selected.length === 3){
         setSelected([''])
-        this.props.addSavedTeam(selected)
+        addSavedTeam(selected)
+        }
+        else{
+            alert('Your team must contain either 3 or 6 pokemon!')
+        }
       }
       const handleChange = e => {
         setSelected(e) 
@@ -27,8 +33,7 @@ function Teams({pokemon, savedTeams}){
         )
     })
 
-    const teams = savedTeams.map(team => {
-        return(team.map(pokemon =>{
+    const teams = savedTeams.map(pokemon => {
         return(
             <Col>
                 <div key={pokemon.id}>
@@ -37,7 +42,7 @@ function Teams({pokemon, savedTeams}){
                 </div>
             </Col>
         )}
-    ))})
+    )
 
     return(
         <Container>
