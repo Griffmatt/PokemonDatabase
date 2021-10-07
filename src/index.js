@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
+import 'react-tabs/style/react-tabs.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

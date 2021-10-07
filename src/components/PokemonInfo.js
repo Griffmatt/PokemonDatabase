@@ -5,7 +5,7 @@ import { Card, CardImg, CardTitle, CardHeader, CardBody, Row, Container, Col, Ca
 function RenderPokemonInfo({pokemon, pokemonArr}) {
     return (
         <Card>
-            <CardHeader className="pokedexHeader">
+            <CardHeader className="cardHeader">
                 <Row>
                     <Link to={"/kantoPokedex"} className="d-flex"><i className="fa fa-arrow-left fa-lg text-white" aria-hidden="true"/></Link> 
                     <CardTitle className="infoTitle">
@@ -56,7 +56,7 @@ function RenderPokemonInfo({pokemon, pokemonArr}) {
                     </Col>
                 </Row>
              </CardBody>
-            <CardBody className="evoLineBackground"> 
+            <CardBody className="stripeBackground"> 
                 <Row>
                     <h2 bolder="true">Evolution Line</h2>
                     <div className="list-unstyled" tg="ul">

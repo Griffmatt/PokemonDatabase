@@ -6,7 +6,8 @@ export const SavedTeams = (state = {
 }, action) => {
 switch (action.type) {
     case ActionTypes.POST_SAVED_TEAM:
-        return {...state, savedTeams:state.savedTeams.concat([action.payload])};
+        const teams = [...state.savedTeams, [{teamId: state.savedTeams.length + 1},...action.payload]];
+        return {savedTeams: teams}
     default:
         return state;
 }
