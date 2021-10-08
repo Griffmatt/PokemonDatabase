@@ -52,7 +52,7 @@ function Teams({pokemon, savedTeams, addSavedTeam}){
     }
     const typesSelected = selectedTypes.map(type => type.value) 
     const options = pokemon.map(pokemon => ({...pokemon, value: pokemon.id, label: `${pokemon.name} ${pokemon.number}`}))
-    const filteredOptions = pokemon.filter(pokemon => (pokemon.evolves === evolved || pokemon.evolves === evolves) &&(pokemon.legendary === false || pokemon.legendary === legendary) && pokemon.caught === caught && !typesSelected.includes(pokemon.type[0])).map(pokemon => ({...pokemon, value: pokemon.id, label: `${pokemon.name} ${pokemon.number}`}))
+    const filteredOptions = pokemon.filter(pokemon => (pokemon.evolves === evolved || pokemon.evolves === evolves) &&(pokemon.legendary === false || pokemon.legendary === legendary) && pokemon.caught === caught && !typesSelected.includes(pokemon.type[0]) && !typesSelected.includes(pokemon.type[1])).map(pokemon => ({...pokemon, value: pokemon.id, label: `${pokemon.name} ${pokemon.number}`}))
     
     const typesArr = ['Bug', 'Dark', 'Dragon','Electric', 'Fairy', 'Fighting', 'Fire', 'Flying', 'Ghost', 'Grass', 'Ground', 'Ice', 'Normal', 'Poison', 'Psychic', 'Rock', 'Steel', 'Water']
     const types = typesArr.map(type => ({label: type, value: type}))
