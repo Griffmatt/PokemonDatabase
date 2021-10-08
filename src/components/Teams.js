@@ -6,6 +6,12 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 function Teams({pokemon, savedTeams, addSavedTeam}){
 
     const [selected, setSelected] = useState([]);
+    const [selectedTypes, setSelectedTypes] = useState([]);
+    const [evolved, setEvolved] = useState(true);
+    const [evolves, setEvolves] = useState(false);
+    const [legendary, setLegendary] = useState(false);
+    const [caught, setCaught] = useState(false);
+
 
     const saveTeam=()=>{
         if(selected.length === 6){
@@ -16,12 +22,63 @@ function Teams({pokemon, savedTeams, addSavedTeam}){
             alert('Your team must contain 6 pokemon!')
         }
       }
-      const handleChange = e => {
-        setSelected(e) 
-      }
-    
 
+      const handleTypeSelect = e => {
+          setSelectedTypes(e)
+    }
+
+      const handleChange = e => {
+        setSelected(e)
+        setSelectedTypes(e) 
+      }
+
+      const handleCheck1 = () => {
+        if(evolved === false){
+            setEvolved(true)
+            setEvolves(false)
+        }
+        else{
+            setEvolves('')
+            setEvolved(false)
+        }
+      }
+
+      const handleCheck2 = () => {
+        setLegendary(!legendary)
+    }
+
+    const handleCheck3 = () => {
+        setCaught(!caught)
+    }
+    const typesSelected = selectedTypes.map(type => type.value) 
     const options = pokemon.map(pokemon => ({...pokemon, value: pokemon.id, label: `${pokemon.name} ${pokemon.number}`}))
+    const filteredOptions = pokemon.filter(pokemon => (pokemon.evolves === evolved || pokemon.evolves === evolves) &&(pokemon.legendary === false || pokemon.legendary === legendary) && pokemon.caught === caught && !typesSelected.includes(pokemon.type[0])).map(pokemon => ({...pokemon, value: pokemon.id, label: `${pokemon.name} ${pokemon.number}`}))
+    
+    const typesArr = ['Bug', 'Dark', 'Dragon','Electric', 'Fairy', 'Fighting', 'Fire', 'Flying', 'Ghost', 'Grass', 'Ground', 'Ice', 'Normal', 'Poison', 'Psychic', 'Rock', 'Steel', 'Water']
+    const types = typesArr.map(type => ({label: type, value: type}))
+
+    function handleRandom(){
+    const n =[]
+    const randomTeam = []
+    if(filteredOptions.length < 6){
+        alert("You have filtered out too many pokemon to make a complete team!")
+    }else{
+        for(let i=0; i<6; i++){
+        let rand = Math.floor(Math.random() * (filteredOptions.length));
+        if (n.includes(rand)) {
+            i -= 1;
+            continue;
+        }
+        else {
+        n.push(rand);
+        randomTeam.push(filteredOptions[rand]);
+        }
+        }
+        console.log(filteredOptions)
+        console.log(typesSelected)
+        setSelected(randomTeam)
+        }
+    }
 
     const selectedTeam = selected.map(pokemon => {
         return(
@@ -74,21 +131,21 @@ function Teams({pokemon, savedTeams, addSavedTeam}){
                                     <Row>
                                        <Col>
                                             <label>Select types to NOT include in random team:</label>
-                                            <Select  isMulti className="mx-2 mt-2" />
+                                            <Select  isMulti className="mx-2 mt-2" options={types} onChange={handleTypeSelect} />
                                        </Col>
                                     </Row>
                                     <Row className="mt-2">
                                         <FormGroup>
                                             <Label>Fully Evolved?</Label>
-                                            <Input className="random-team-checkbox" type="checkbox" name="fullyEvolved"/> 
+                                            <Input className="random-team-checkbox" type="checkbox" onChange={handleCheck1}/> 
                                             <Label for="fullyEvolved">Include legendaries?</Label>
-                                            <Input className="random-team-checkbox" type="checkbox" name="legendary"/> 
+                                            <Input className="random-team-checkbox" type="checkbox" onChange={handleCheck2}/> 
                                             <Label for="fullyEvolved">Only Pokemon You've Caught?</Label>
-                                            <Input className="random-team-checkbox" type="checkbox" name="caught"/>                                                                                                                                                                 
+                                            <Input className="random-team-checkbox" type="checkbox" onChange={handleCheck3}/>                                                                                                                                                                 
                                         </FormGroup>
                                     </Row>
                                     <Row>
-                                        <button className="saveTeamBtn btn mt-2 mx-auto"  >Get Random Team</button>
+                                        <button className="saveTeamBtn btn mt-2 mx-auto"  onClick={handleRandom} type="button">Get Random Team</button>
                                     </Row>
                                 </Form>
                             </TabPanel>
