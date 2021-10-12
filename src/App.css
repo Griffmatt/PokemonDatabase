@@ -115,6 +115,20 @@ Button {
   background-color: rgb(165, 165, 165) !important;
 }
 
+.locationBtn {
+  width: 20em;
+  height: 7em;
+  font-size: 2em;
+  border-radius: 15px;
+}
+
+.optionBtn{
+  width: 15em;
+  height: 5em;
+  
+  border-radius: 15px;
+}
+
 .infoTitle {
     font-size: calc(2em + 1vmin);
     font-weight: 700;
@@ -163,11 +177,6 @@ dd .card-img{
   background: rgb(238, 238, 238);
 }
 
-.cardHeader{
-  background: rgb(77, 77, 77);
-  color: white;
-}
-
 input {
   text-align: center;
 }
@@ -196,4 +205,24 @@ ol > li:nth-child(odd) {
 .random-team-checkbox{
   margin-right: 25px;
   margin-left: 5px;
+}
+
+.Cave {
+  background-image: url(./images/Cave.png);
+}
+
+.Mountain {
+  background-image: url(./images/mountain.png);
+}
+
+.Forest {
+  background-image: url(./images/forest.jpg);
+}
+
+.Field {
+  background-image: url(./images/field.jpg);
+}
+
+.Ocean {
+  background-image: url(./images/ocean.jpg);
 }

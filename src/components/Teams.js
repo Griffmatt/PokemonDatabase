@@ -106,10 +106,10 @@ function Teams({pokemon, savedTeams, addSavedTeam}){
 
     return(
         <Container>
+            <Row>
+                <h2>Create A Team</h2>
+            </Row>              
             <Card>
-                <CardHeader className="cardHeader">
-                    <h2>Create A Team</h2>
-                </CardHeader>
                 <Container>
                     <Row>
                         <Tabs forceRenderTabPanel defaultIndex={1}>
@@ -170,7 +170,7 @@ function Teams({pokemon, savedTeams, addSavedTeam}){
                             </ol>
                         </div>
                     </Row>
-            </Card>
+                </Card>
         </Container>
     )  
 } 

@@ -4,7 +4,7 @@ export const POKEMON = [
         number: "#001",
         name: "Bulbasaur",
         description: "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 0,
         middleEvolution: false,
         baby: false,
@@ -17,14 +17,15 @@ export const POKEMON = [
         weight: "15.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 1,
         number: "#002",
         name: "Ivysaur",
         description: "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 0,
         middleEvolution: true,
         baby: false,
@@ -37,14 +38,15 @@ export const POKEMON = [
         weight: "28.7 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 2,
         number: "#003",
         name: "Venusaur",
         description: "Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 0,
         middleEvolution: false,
         baby: false,
@@ -57,14 +59,15 @@ export const POKEMON = [
         weight: "220.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 3,
         number: "#004",
         name: "Charmander",
         description: "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 3,
         middleEvolution: false,
         baby: false,
@@ -77,14 +80,15 @@ export const POKEMON = [
         weight: "41.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 4,
         number: "#005",
         name: "Charmeleon",
         description: "It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 3,
         middleEvolution: true,
         baby: false,
@@ -97,14 +101,15 @@ export const POKEMON = [
         weight: "18.7 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 5,
         number: "#006",
         name: "Charizard",
         description: "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 3,
         middleEvolution: false,
         baby: false,
@@ -117,14 +122,15 @@ export const POKEMON = [
         weight: "199.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 6,
         number: "#007",
         name: "Squirtle",
         description: "When it retracts its long neck into its shell, it squirts out water with vigorous force.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 6,
         middleEvolution: false,
         baby: false,
@@ -137,14 +143,15 @@ export const POKEMON = [
         weight: "19.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 7,
         number: "#008",
         name: "Wartortle",
         description: "It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 6,
         middleEvolution: true,
         baby: false,
@@ -157,14 +164,15 @@ export const POKEMON = [
         weight: "49.6 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 8,
         number: "#009",
         name: "Blastoise",
         description: "It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 6, 
         middleEvolution: false,
         baby: false,
@@ -177,14 +185,15 @@ export const POKEMON = [
         weight: "188.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 9,
         number: "#010",
         name: "Caterpie",
         description: "For protection, it releases a horrible stench from the antenna on its head to drive away enemies.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 9, 
         middleEvolution: false,
         baby: false,
@@ -197,14 +206,15 @@ export const POKEMON = [
         weight: "6.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 10,
         number: "#011",
         name: "Metapod",
         description: "It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 9, 
         middleEvolution: true,
         baby: false,
@@ -217,14 +227,15 @@ export const POKEMON = [
         weight: "21.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 11,
         number: "#012",
         name: "Butterfree",
         description: "In battle, it flaps its wings at great speed to release highly toxic dust into the air.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 9, 
         middleEvolution: false,
         baby: false,
@@ -237,14 +248,15 @@ export const POKEMON = [
         weight: "70.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 12,
         number: "#013",
         name: "Weedle",
         description: "Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 12, 
         middleEvolution: false,
         baby: false,
@@ -257,14 +269,15 @@ export const POKEMON = [
         weight: "7.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 13,
         number: "#014",
         name: "Kakuna",
         description: "Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 12, 
         middleEvolution: true,
         baby: false,
@@ -277,14 +290,15 @@ export const POKEMON = [
         weight: "22.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 14,
         number: "#015",
         name: "Beedrill",
         description: "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 12, 
         middleEvolution: false,
         baby: false,
@@ -297,14 +311,15 @@ export const POKEMON = [
         weight: "65.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 15,
         number: "#016",
         name: "Pidgey",
         description: "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 15, 
         middleEvolution: false,
         baby: false,
@@ -317,14 +332,15 @@ export const POKEMON = [
         weight: "4.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 16,
         number: "#017",
         name: "Pidgeotto",
         description: "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 15, 
         middleEvolution: true,
         baby: false,
@@ -337,14 +353,15 @@ export const POKEMON = [
         weight: "66.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 17,
         number: "#018",
         name: "Pidgeot",
         description: "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 15, 
         middleEvolution: false,
         baby: false,
@@ -357,14 +374,15 @@ export const POKEMON = [
         weight: "87.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 18,
         number: "#019",
         name: "Rattata",
         description: "Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 18, 
         middleEvolution: false,
         baby: false,
@@ -377,14 +395,15 @@ export const POKEMON = [
         weight: "7.7 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 19,
         number: "#020",
         name: "Raticate",
         description: "Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 18, 
         middleEvolution: false,
         baby: false,
@@ -397,14 +416,15 @@ export const POKEMON = [
         weight: "40.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 20,
         number: "#021",
         name: "Spearow",
         description: "Inept at flying high. However, it can fly around very fast to protect its territory.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 20, 
         middleEvolution: false,
         baby: false,
@@ -417,14 +437,15 @@ export const POKEMON = [
         weight: "4.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 21,
         number: "#022",
         name: "Fearow",
         description: "A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 20, 
         middleEvolution: false,
         baby: false,
@@ -437,14 +458,15 @@ export const POKEMON = [
         weight: "83.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 22,
         number: "#023",
         name: "Ekans",
         description: "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 22, 
         middleEvolution: false,
         baby: false,
@@ -457,14 +479,15 @@ export const POKEMON = [
         weight: "15.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 23,
         number: "#024",
         name: "Arbok",
         description: "The frightening patterns on its belly have been studied. Six variations have been confirmed.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 22, 
         middleEvolution: false,
         baby: false,
@@ -477,14 +500,15 @@ export const POKEMON = [
         weight: "143.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 24,
         number: "#025",
         name: "Pikachu",
         description: "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 24, 
         middleEvolution: false,
         baby: false,
@@ -497,14 +521,15 @@ export const POKEMON = [
         weight: "13.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 25,
         number: "#026",
         name: "Raichu",
         description: "Its long tail serves as a ground to protect itself from its own high-voltage power.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 24, 
         middleEvolution: false,
         baby: false,
@@ -517,14 +542,15 @@ export const POKEMON = [
         weight: "66.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 26,
         number: "#027",
         name: "Sandshrew",
         description: "It loves to bathe in the grit of dry, sandy areas. By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body.",
-        evoldes: true,
+        evolves: true, rate: 1,
         evolutionId: 26,
         middleEvolution: false,
         baby: false,
@@ -537,14 +563,15 @@ export const POKEMON = [
         weight: "26.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 27,
         number: "#028",
         name: "Sandslash",
         description: "The drier the area Sandslash lives in, the harder and smoother the Pokémon’s spikes will feel when touched.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 26,
         middleEvolution: false,
         baby: false,
@@ -557,14 +584,15 @@ export const POKEMON = [
         weight: "65. LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 28,
         number: "#029",
         name: "Nidoran",
         description: "Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators.", 
-        evolves: true,
+        evolves: true, rate: 1, 
         evolutionId: 28,
         middleEvolution: false,
         baby: false,
@@ -577,14 +605,15 @@ export const POKEMON = [
         weight: "15.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 29,
         number: "#030",
         name: "Nidorina",
         description: "The horn on its head has atrophied. It’s thought that this happens so Nidorina’s children won’t get poked while their mother is feeding them.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 28,
         middleEvolution: true,
         baby: false,
@@ -597,14 +626,15 @@ export const POKEMON = [
         weight: "44.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 30,
         number: "#031",
         name: "Nidoqueen",
         description: "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionStone: "Moon Stone",
         evolutionId: 28,
         middleEvolution: false,
@@ -618,14 +648,15 @@ export const POKEMON = [
         weight: "132.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 31,
         number: "#032",
         name: "Nidoran",
         description: "The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 31,
         middleEvolution: false,
         baby: false,
@@ -638,14 +669,15 @@ export const POKEMON = [
         weight: "19.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 32,
         number: "#033",
         name: "Nidorino",
         description: "With a horn that’s harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 31,
         middleEvolution: true,
         baby: false,
@@ -658,14 +690,15 @@ export const POKEMON = [
         weight: "43.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 33,
         number: "#034",
         name: "Nidoking",
         description: "When it goes on a rampage, it’s impossible to control. But in the presence of a Nidoqueen it’s lived with for a long time, Nidoking calms down.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionStone: "Moon Stone",
         evolutionId: 31,
         middleEvolution: false,
@@ -679,14 +712,15 @@ export const POKEMON = [
         weight: "136.7 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 34,
         number: "#035",
         name: "Clefairy",
         description: "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 34,
         middleEvolution: true,
         baby: false,
@@ -699,14 +733,15 @@ export const POKEMON = [
         weight: "16.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 35,
         number: "#036",
         name: "Clefable",
         description: "A timid fairy Pokémon that is rarely seen, it will run and hide the moment it senses people.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionStone: "Moon Stone",
         evolutionId: 34, 
         middleEvolution: false,
@@ -720,14 +755,15 @@ export const POKEMON = [
         weight: "88.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 36,
         number: "#037",
         name: "Vulpix",
         description: "While young, it has six gorgeous tails. When it grows, several new tails are sprouted.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 36, 
         middleEvolution: false,
         baby: false,
@@ -740,14 +776,15 @@ export const POKEMON = [
         weight: "21,8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 37,
         number: "#038",
         name: "Ninetales",
         description: "It is said to live 1,000 years, and each of its tails is loaded with supernatural powers.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 36, 
         middleEvolution: true,
         baby: false,
@@ -760,14 +797,15 @@ export const POKEMON = [
         weight: "43.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 38,
         number: "#039",
         name: "Jigglypuff",
         description: "Jigglypuff has top-notch lung capacity, even by comparison to other Pokémon. It won’t stop singing its lullabies until its foes fall asleep.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 38, 
         middleEvolution: false,
         baby: false,
@@ -780,14 +818,15 @@ export const POKEMON = [
         weight: "12.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 39,
         number: "#040",
         name: "Wigglytuff",
         description: "The more air it takes in, the more it inflates. If opponents catch it in a bad mood, it will inflate itself to an enormous size to intimidate them.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 38, 
         middleEvolution: false,
         baby: false,
@@ -800,14 +839,15 @@ export const POKEMON = [
         weight: "26.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 40,
         number: "#041",
         name: "Zubat",
         description: "It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 40, 
         middleEvolution: false,
         baby: false,
@@ -820,14 +860,15 @@ export const POKEMON = [
         weight: "16.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 41,
         number: "#042",
         name: "Golbat",
         description: "It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 40, 
         middleEvolution: false,
         baby: false,
@@ -840,14 +881,15 @@ export const POKEMON = [
         weight: "121.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 42,
         number: "#043",
         name: "Oddish",
         description: "If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 42, 
         middleEvolution: false,
         baby: false,
@@ -860,14 +902,15 @@ export const POKEMON = [
         weight: "11.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 43,
         number: "#044",
         name: "Gloom",
         description: "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 42, 
         middleEvolution: true,
         baby: false,
@@ -880,14 +923,15 @@ export const POKEMON = [
         weight: "19.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 44,
         number: "#045",
         name: "Vileplume",
         description: "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 42, 
         middleEvolution: false,
         baby: false,
@@ -900,14 +944,15 @@ export const POKEMON = [
         weight: "41.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 45,
         number: "#046",
         name: "Paras",
         description: "Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 45, 
         middleEvolution: false,
         baby: false,
@@ -920,14 +965,15 @@ export const POKEMON = [
         weight: "11.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 46,
         number: "#047",
         name: "Parasect",
         description: "The bug host is drained of energy by the mushroom on its back. The mushroom appears to do all the thinking.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 45, 
         middleEvolution: false,
         baby: false,
@@ -940,14 +986,15 @@ export const POKEMON = [
         weight: "65.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 47,
         number: "#048",
         name: "Venonat",
         description: "Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 47, 
         middleEvolution: false,
         baby: false,
@@ -960,14 +1007,15 @@ export const POKEMON = [
         weight: "66.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 48,
         number: "#049",
         name: "Venomoth",
         description: "The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact..", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 47, 
         middleEvolution: false,
         baby: false,
@@ -980,14 +1028,15 @@ export const POKEMON = [
         weight: "27.6 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 49,
         number: "#050",
         name: "Diglett",
         description: "If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 49, 
         middleEvolution: false,
         baby: false,
@@ -1000,14 +1049,15 @@ export const POKEMON = [
         weight: "1.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 50,
         number: "#051",
         name: "Dugtrio",
         description: "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 49, 
         middleEvolution: false,
         baby: false,
@@ -1020,14 +1070,15 @@ export const POKEMON = [
         weight: "73.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 51,
         number: "#052",
         name: "Meowth",
         description: "It loves to collect shiny things. If it’s in a good mood, it might even let its Trainer have a look at its hoard of treasures.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 51, 
         middleEvolution: false,
         baby: false,
@@ -1040,14 +1091,15 @@ export const POKEMON = [
         weight: "9.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 52,
         number: "#053",
         name: "Persian",
         description: "Getting this prideful Pokémon to warm up to you takes a lot of effort, and it will claw at you the moment it gets annoyed.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 51, 
         middleEvolution: false,
         baby: false,
@@ -1060,14 +1112,15 @@ export const POKEMON = [
         weight: "70.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 53,
         number: "#054",
         name: "Psyduck",
         description: "Psyduck is constantly beset by headaches. If the Pokémon lets its strange power erupt, apparently the pain subsides for a while.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 53,
         middleEvolution: false,
         baby: false,
@@ -1080,14 +1133,15 @@ export const POKEMON = [
         weight: "43.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 54,
         number: "#055",
         name: "Golduck",
         description: "This Pokémon lives in gently flowing rivers. It paddles through the water with its long limbs, putting its graceful swimming skills on display.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 53,
         middleEvolution: false,
         baby: false,
@@ -1100,14 +1154,15 @@ export const POKEMON = [
         weight: "168.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 55,
         number: "#056",
         name: "Mankey",
         description: "An agile Pokémon that lives in trees. It angers easily and will not hesitate to attack anything.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 55,
         middleEvolution: false,
         baby: false,
@@ -1120,14 +1175,15 @@ export const POKEMON = [
         weight: "61.7 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 56,
         number: "#057",
         name: "Primeape",
         description: "It stops being angry only when nobody else is around. To view this moment is very difficult.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 55,
         middleEvolution: false,
         baby: false,
@@ -1140,14 +1196,15 @@ export const POKEMON = [
         weight: "70.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 57,
         number: "#058",
         name: "Growlithe",
         description: "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 57,
         middleEvolution: false,
         baby: false,
@@ -1160,14 +1217,15 @@ export const POKEMON = [
         weight: "18.7 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 58,
         number: "#059",
         name: "Arcanine",
         description: "The sight of it running over 6,200 miles in a single day and night has captivated many people.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 57,
         middleEvolution: false,
         baby: false,
@@ -1180,14 +1238,15 @@ export const POKEMON = [
         weight: "341.7 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 59,
         number: "#060",
         name: "Poliwag",
         description: "For Poliwag, swimming is easier than walking. The swirl pattern on its belly is actually part of the Pokémon’s innards showing through the skin.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 59,
         middleEvolution: false,
         baby: false,
@@ -1200,14 +1259,15 @@ export const POKEMON = [
         weight: "27.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 60,
         number: "#061",
         name: "Poliwhirl",
         description: "Staring at the swirl on its belly causes drowsiness. This trait of Poliwhirl’s has been used in place of lullabies to get children to go to sleep.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 59,
         middleEvolution: true,
         baby: false,
@@ -1220,14 +1280,15 @@ export const POKEMON = [
         weight: "44.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 61,
         number: "#062",
         name: "Poliwrath",
         description: "Its body is solid muscle. When swimming through cold seas, Poliwrath uses its impressive arms to smash through drift ice and plow forward.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 59,
         middleEvolution: false,
         baby: false,
@@ -1240,14 +1301,15 @@ export const POKEMON = [
         weight: "119.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 62,
         number: "#063",
         name: "Abra",
         description: "This Pokémon uses its psychic powers while it sleeps. The contents of Abra’s dreams affect the powers that the Pokémon wields.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 62, 
         middleEvolution: false,
         baby: false,
@@ -1260,14 +1322,15 @@ export const POKEMON = [
         weight: "43.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 63,
         number: "#064",
         name: "Kadabra",
         description: "Using its psychic power, Kadabra levitates as it sleeps. It uses its springy tail as a pillow.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 62, 
         middleEvolution: true,
         baby: false,
@@ -1280,14 +1343,15 @@ export const POKEMON = [
         weight: "124.6 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 64,
         number: "#065",
         name: "Alakazam",
         description: "It has an incredibly high level of intelligence. Some say that Alakazam remembers everything that ever happens to it, from birth till death.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 62, 
         middleEvolution: false,
         baby: false,
@@ -1300,14 +1364,15 @@ export const POKEMON = [
         weight: "105.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 65,
         number: "#066",
         name: "Machop",
         description: "Its whole body is composed of muscles. Even though it’s the size of a human child, it can hurl 100 grown-ups.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 65, 
         middleEvolution: false,
         baby: false,
@@ -1320,14 +1385,15 @@ export const POKEMON = [
         weight: "43.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 66,
         number: "#067",
         name: "Machoke",
         description: "Its muscular body is so powerful, it must wear a power-save belt to be able to regulate its motions.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 65, 
         middleEvolution: true,
         baby: false,
@@ -1340,14 +1406,15 @@ export const POKEMON = [
         weight: "155.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 67,
         number: "#068",
         name: "Machamp",
         description: "It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 65, 
         middleEvolution: false,
         baby: false,
@@ -1360,14 +1427,15 @@ export const POKEMON = [
         weight: "286.6 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 68,
         number: "#069",
         name: "Bellsprout",
         description: "Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 69, 
         middleEvolution: false,
         baby: false,
@@ -1380,14 +1448,15 @@ export const POKEMON = [
         weight: "8.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 69,
         number: "#070",
         name: "Weepinbell",
         description: "When hungry, it swallows anything that moves. Its hapless prey is dissolved by strong acids.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 69, 
         middleEvolution: true,
         baby: false,
@@ -1400,14 +1469,15 @@ export const POKEMON = [
         weight: "14.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 70,
         number: "#071",
         name: "Victreebel",
         description: "Lures prey with the sweet aroma of honey. Swallowed whole, the prey is dissolved in a day, bones and all.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 69, 
         middleEvolution: false,
         baby: false,
@@ -1420,14 +1490,15 @@ export const POKEMON = [
         weight: "34.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 71,
         number: "#072",
         name: "Tentacool",
         description: "Tentacool is not a particularly strong swimmer. It drifts across the surface of shallow seas as it searches for prey.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 71, 
         middleEvolution: false,
         baby: false,
@@ -1440,14 +1511,15 @@ export const POKEMON = [
         weight: "100.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 72,
         number: "#073",
         name: "Tentacruel",
         description: "When the red orbs on Tentacruel’s head glow brightly, watch out. The Pokémon is about to fire off a burst of ultrasonic waves..", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 71, 
         middleEvolution: false,
         baby: false,
@@ -1460,14 +1532,15 @@ export const POKEMON = [
         weight: "121.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 73,
         number: "#074",
         name: "Geodude",
         description: "Commonly found near mountain trails and the like. If you step on one by accident, it gets angry.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 73, 
         middleEvolution: false,
         baby: false,
@@ -1480,14 +1553,15 @@ export const POKEMON = [
         weight: "44.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 74,
         number: "#075",
         name: "Graveler",
         description: "Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 73, 
         middleEvolution: true,
         baby: false,
@@ -1500,14 +1574,15 @@ export const POKEMON = [
         weight: "231.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 75,
         number: "#076",
         name: "Golem",
         description: "Once it sheds its skin, its body turns tender and whitish. Its hide hardens when it’s exposed to air.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 73, 
         middleEvolution: false,
         baby: false,
@@ -1520,14 +1595,15 @@ export const POKEMON = [
         weight: "661.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 76,
         number: "#077",
         name: "Ponyta",
         description: "It can’t run properly when it’s newly born. As it races around with others of its kind, its legs grow stronger.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 76, 
         middleEvolution: false,
         baby: false,
@@ -1540,14 +1616,15 @@ export const POKEMON = [
         weight: "66.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 77,
         number: "#078",
         name: "Rapidash",
         description: "This Pokémon can be seen galloping through fields at speeds of up to 150 mph, its fiery mane fluttering in the wind.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 76, 
         middleEvolution: false,
         baby: false,
@@ -1560,14 +1637,15 @@ export const POKEMON = [
         weight: "209.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 78,
         number: "#079",
         name: "Slowpoke",
         description: "Slow-witted and oblivious, this Pokémon won’t feel any pain if its tail gets eaten. It won’t notice when its tail grows back, either.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 78, 
         middleEvolution: false,
         baby: false,
@@ -1580,14 +1658,15 @@ export const POKEMON = [
         weight: "79.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 79,
         number: "#080",
         name: "Slowbro",
         description: "Slowpoke became Slowbro when a Shellder bit on to its tail. Sweet flavors seeping from the tail make the Shellder feel as if its life is a dream.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 78, 
         middleEvolution: false,
         baby: false,
@@ -1600,14 +1679,15 @@ export const POKEMON = [
         weight: "173.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 80,
         number: "#081",
         name: "Magnemite",
         description: "At times, Magnemite runs out of electricity and ends up on the ground. If you give batteries to a grounded Magnemite, it’ll start moving again..", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 80, 
         middleEvolution: false,
         baby: false,
@@ -1620,14 +1700,15 @@ export const POKEMON = [
         weight: "13.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 81,
         number: "#082",
         name: "Magneton",
         description: "This Pokémon is three Magnemite that have linked together. Magneton sends out powerful radio waves to study its surroundings.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 80,
         middleEvolution: false,
         baby: false,
@@ -1640,14 +1721,15 @@ export const POKEMON = [
         weight: "132.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 82,
         number: "#083",
         name: "Farfetch'd",
         description: "The stalk this Pokémon carries in its wings serves as a sword to cut down opponents. In a dire situation, the stalk can also serve as food..", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 82,
         middleEvolution: false,
         baby: false,
@@ -1660,14 +1742,15 @@ export const POKEMON = [
         weight: "33.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 83,
         number: "#084",
         name: "Doduo",
         description: "Its short wings make flying difficult. Instead, this Pokémon runs at high speed on developed legs.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 83,
         middleEvolution: false,
         baby: false,
@@ -1680,14 +1763,15 @@ export const POKEMON = [
         weight: "86.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 84,
         number: "#085",
         name: "Dodrio",
         description: "One of Doduo’s two heads splits to form a unique species. It runs close to 40 mph in prairies.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 83,
         middleEvolution: false,
         baby: false,
@@ -1700,14 +1784,15 @@ export const POKEMON = [
         weight: "187.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 85,
         number: "#086",
         name: "Seel",
         description: "Loves freezing-cold conditions. Relishes swimming in a frigid climate of around 14 degrees Fahrenheit.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 85,
         middleEvolution: false,
         baby: false,
@@ -1720,14 +1805,15 @@ export const POKEMON = [
         weight: "198.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 86,
         number: "#087",
         name: "Dewgong",
         description: "Its entire body is a snowy white. Unharmed by even intense cold, it swims powerfully in icy waters.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 85,
         middleEvolution: false,
         baby: false,
@@ -1740,14 +1826,15 @@ export const POKEMON = [
         weight: "264.6 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 87,
         number: "#088",
         name: "Grimer",
         description: "Made of congealed sludge. It smells too putrid to touch. Even weeds won’t grow in its path.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 87,
         middleEvolution: false,
         baby: false,
@@ -1760,14 +1847,15 @@ export const POKEMON = [
         weight: "66.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 88,
         number: "#089",
         name: "Muk",
         description: "Smells so awful, it can cause fainting. Through degeneration of its nose, it lost its sense of smell.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 87,
         middleEvolution: false,
         baby: false,
@@ -1780,14 +1868,15 @@ export const POKEMON = [
         weight: "66.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 89,
         number: "#090",
         name: "Shellder",
         description: "It swims facing backward by opening and closing its two-piece shell. It is surprisingly fast.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 89, 
         middleEvolution: false,
         baby: false,
@@ -1800,14 +1889,15 @@ export const POKEMON = [
         weight: "8.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 90,
         number: "#091",
         name: "Cloyster",
         description: "Its shell is extremely hard. It cannot be shattered, even with a bomb. The shell opens only when it is attacking.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 89, 
         middleEvolution: false,
         baby: false,
@@ -1820,14 +1910,15 @@ export const POKEMON = [
         weight: "292.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 91,
         number: "#092",
         name: "Gastly",
         description: "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 91, 
         middleEvolution: false,
         baby: false,
@@ -1840,14 +1931,15 @@ export const POKEMON = [
         weight: "0.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 92,
         number: "#093",
         name: "Haunter",
         description: "Its tongue is made of gas. If licked, its victim starts shaking constantly until death eventually comes.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 91, 
         middleEvolution: true,
         baby: false,
@@ -1860,14 +1952,15 @@ export const POKEMON = [
         weight: "0.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 93,
         number: "#094",
         name: "Gengar",
         description: "On the night of a full moon, if shadows move on their own and laugh, it must be Gengar’s doing.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 91, 
         middleEvolution: false,
         baby: false,
@@ -1880,14 +1973,15 @@ export const POKEMON = [
         weight: "89.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Forest"
     },
     {
         id: 94,
         number: "#095",
         name: "Onix",
         description: "As it digs through the ground, it absorbs many hard objects. This is what makes its body so solid.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 94, 
         middleEvolution: false,
         baby: false,
@@ -1900,14 +1994,15 @@ export const POKEMON = [
         weight: "463.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 95,
         number: "#096",
         name: "Drowzee",
         description: "If you sleep by it all the time, it will sometimes show you dreams it had eaten in the past.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 95, 
         middleEvolution: false,
         baby: false,
@@ -1920,14 +2015,15 @@ export const POKEMON = [
         weight: "71.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 96,
         number: "#097",
         name: "Hypno",
         description: "Avoid eye contact if you come across one. It will try to put you to sleep by using its pendulum.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 95, 
         middleEvolution: false,
         baby: false,
@@ -1940,14 +2036,15 @@ export const POKEMON = [
         weight: "166.7 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 97,
         number: "#098",
         name: "Krabby",
         description: "It can be found near the sea. The large pincers grow back if they are torn out of their sockets.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 97, 
         middleEvolution: false,
         baby: false,
@@ -1960,14 +2057,15 @@ export const POKEMON = [
         weight: "14.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 98,
         number: "#099",
         name: "Kingler",
         description: "Its large and hard pincer has 10,000-horsepower strength. However, being so big, it is unwieldy to move.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 97, 
         middleEvolution: false,
         baby: false,
@@ -1980,14 +2078,15 @@ export const POKEMON = [
         weight: "132.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 99,
         number: "#100",
         name: "Voltorb",
         description: "It is said to camouflage itself as a Poké Ball. It will self-destruct with very little stimulus.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 99, 
         middleEvolution: false,
         baby: false,
@@ -2000,14 +2099,15 @@ export const POKEMON = [
         weight: "22.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 100,
         number: "#101",
         name: "Electrode",
         description: "Stores electrical energy inside its body. Even the slightest shock could trigger a huge explosion.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 99, 
         middleEvolution: false,
         baby: false,
@@ -2020,14 +2120,15 @@ export const POKEMON = [
         weight: "146.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 101,
         number: "#102",
         name: "Exeggcute",
         description: "Though it may look like it’s just a bunch of eggs, it’s a proper Pokémon. Exeggcute communicates with others of its kind via telepathy, apparently.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 101, 
         middleEvolution: false,
         baby: false,
@@ -2040,14 +2141,15 @@ export const POKEMON = [
         weight: "5.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 102,
         number: "#103",
         name: "Exeggutor",
         description: "Each of Exeggutor’s three heads is thinking different thoughts. The three don’t seem to be very interested in one another.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 101, 
         middleEvolution: false,
         baby: false,
@@ -2060,14 +2162,15 @@ export const POKEMON = [
         weight: "264.6 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 103,
         number: "#104",
         name: "Cubone",
         description: "When the memory of its departed mother brings it to tears, its cries echo mournfully within the skull it wears on its head..", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 103, 
         middleEvolution: false,
         baby: false,
@@ -2080,14 +2183,15 @@ export const POKEMON = [
         weight: "14.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 104,
         number: "#105",
         name: "Marowak",
         description: "This Pokémon overcame its sorrow to evolve a sturdy new body. Marowak faces its opponents bravely, using a bone as a weapon.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 103, 
         middleEvolution: false,
         baby: false,
@@ -2100,14 +2204,15 @@ export const POKEMON = [
         weight: "99.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 105,
         number: "#106",
         name: "Hitmonlee",
         description: "This amazing Pokémon has an awesome sense of balance. It can kick in succession from any position.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 105, 
         middleEvolution: false,
         baby: false,
@@ -2120,14 +2225,15 @@ export const POKEMON = [
         weight: "109.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 106,
         number: "#107",
         name: "Hitmonchan",
         description: "Its punches slice the air. They are launched at such high speed, even a slight graze could cause a burn.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 106, 
         middleEvolution: false,
         baby: false,
@@ -2140,14 +2246,15 @@ export const POKEMON = [
         weight: "110.7 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 107,
         number: "#108",
         name: "Lickitung",
         description: "If this Pokémon’s sticky saliva gets on you and you don’t clean it off, an intense itch will set in. The itch won’t go away, either.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 107,
         middleEvolution: false,
         baby: false,
@@ -2160,14 +2267,15 @@ export const POKEMON = [
         weight: "144.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 108,
         number: "#109",
         name: "Koffing",
         description: "Its body is full of poisonous gas. It floats into garbage dumps, seeking out the fumes of raw, rotting trash.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 108,
         middleEvolution: false,
         baby: false,
@@ -2180,14 +2288,15 @@ export const POKEMON = [
         weight: "2.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 109,
         number: "#110",
         name: "Weezing",
         description: "It mixes gases between its two bodies. It’s said that these Pokémon were seen all over the Galar region back in the day.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 109,
         middleEvolution: false,
         baby: false,
@@ -2200,14 +2309,15 @@ export const POKEMON = [
         weight: "20.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Cave"
     },
     {
         id: 110,
         number: "#111",
         name: "Rhyhorn",
         description: "Strong, but not too bright, this Pokémon can shatter even a skyscraper with its charging tackles.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 110,
         middleEvolution: false,
         baby: false,
@@ -2220,14 +2330,15 @@ export const POKEMON = [
         weight: "253.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 111,
         number: "#112",
         name: "Rhydon",
         description: "It begins walking on its hind legs after evolution. It can punch holes through boulders with its horn.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 110,
         middleEvolution: false,
         baby: false,
@@ -2240,14 +2351,15 @@ export const POKEMON = [
         weight: "264.6 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 112,
         number: "#113",
         name: "Chansey",
         description: "The egg Chansey carries is not only delicious but also packed with nutrition. It’s used as a high-class cooking ingredient.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 112,
         middleEvolution: true,
         baby: false,
@@ -2260,14 +2372,15 @@ export const POKEMON = [
         weight: "76.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 113,
         number: "#114",
         name: "Tangela",
         description: "Hidden beneath a tangle of vines that grows nonstop even if the vines are torn off, this Pokémon’s true appearance remains a mystery.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 113,
         middleEvolution: false,
         baby: false,
@@ -2280,14 +2393,15 @@ export const POKEMON = [
         weight: "77.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 114,
         number: "#115",
         name: "Kangaskhan",
         description: "Although it’s carrying its baby in a pouch on its belly, Kangaskhan is swift on its feet. It intimidates its opponents with quick jabs.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 114,
         middleEvolution: true,
         baby: false,
@@ -2300,14 +2414,15 @@ export const POKEMON = [
         weight: "176.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 115,
         number: "#116",
         name: "Horsea",
         description: "Horsea makes its home in oceans with gentle currents. If this Pokémon is under attack, it spits out pitch-black ink and escapes.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 116, 
         middleEvolution: false,
         baby: false,
@@ -2320,14 +2435,15 @@ export const POKEMON = [
         weight: "17.6 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 116,
         number: "#117",
         name: "Seadra",
         description: "It’s the males that raise the offspring. While Seadra are raising young, the spines on their backs secrete thicker and stronger poison.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 116, 
         middleEvolution: true,
         baby: false,
@@ -2340,14 +2456,15 @@ export const POKEMON = [
         weight: "55.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 117,
         number: "#118",
         name: "Goldeen",
         description: "Its dorsal, pectoral, and tail fins wave elegantly in water. That is why it is known as the Water Dancer..", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 117, 
         middleEvolution: false,
         baby: false,
@@ -2360,14 +2477,15 @@ export const POKEMON = [
         weight: "33.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 118,
         number: "#119",
         name: "Seaking",
         description: "In autumn, its body becomes more fatty in preparing to propose to a mate. It takes on beautiful colors.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 117, 
         middleEvolution: false,
         baby: false,
@@ -2380,14 +2498,15 @@ export const POKEMON = [
         weight: "86.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 119,
         number: "#120",
         name: "Staryu",
         description: "If you visit a beach at the end of summer, you’ll be able to see groups of Staryu lighting up in a steady rhythm.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 119, 
         middleEvolution: false,
         baby: false,
@@ -2400,14 +2519,15 @@ export const POKEMON = [
         weight: "76.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 120,
         number: "#121",
         name: "Starmie",
         description: "This Pokémon has an organ known as its core. The organ glows in seven colors when Starmie is unleashing its potent psychic powers..", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 119, 
         middleEvolution: false,
         baby: false,
@@ -2420,14 +2540,15 @@ export const POKEMON = [
         weight: "176.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 121,
         number: "#122",
         name: "Mr. Mime",
         description: "The broadness of its hands may be no coincidence—many scientists believe its palms became enlarged specifically for pantomiming.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 122, 
         middleEvolution: false,
         baby: false,
@@ -2440,14 +2561,15 @@ export const POKEMON = [
         weight: "120.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 122,
         number: "#123",
         name: "Scyther",
         description: "As Scyther fights more and more battles, its scythes become sharper and sharper. With a single slice, Scyther can fell a massive tree.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 122, 
         middleEvolution: false,
         baby: false,
@@ -2460,14 +2582,15 @@ export const POKEMON = [
         weight: "123.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 123,
         number: "#124",
         name: "Jynx",
         description: "In certain parts of Galar, Jynx was once feared and worshiped as the Queen of Ice.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 123, 
         middleEvolution: false,
         baby: false,
@@ -2480,14 +2603,15 @@ export const POKEMON = [
         weight: "89.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 124,
         number: "#125",
         name: "Electabuzz",
         description: "Many power plants keep Ground-type Pokémon around as a defense against Electabuzz that come seeking electricity.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 124, 
         middleEvolution: true,
         baby: false,
@@ -2500,14 +2624,15 @@ export const POKEMON = [
         weight: "66.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 125,
         number: "#126",
         name: "Magmar",
         description: "Magmar dispatches its prey with fire. But it regrets this habit once it realizes that it has burned its intended prey to a charred crisp.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 125, 
         middleEvolution: true,
         baby: false,
@@ -2520,14 +2645,15 @@ export const POKEMON = [
         weight: "98.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 126,
         number: "#127",
         name: "Pinsir",
         description: "These Pokémon judge one another based on pincers. Thicker, more impressive pincers make for more popularity with the opposite gender.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 126, 
         middleEvolution: false,
         baby: false,
@@ -2540,14 +2666,15 @@ export const POKEMON = [
         weight: "121.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 127,
         number: "#128",
         name: "Tauros",
         description: "When Tauros begins whipping itself with its tails, it’s a warning that the Pokémon is about to charge with astounding speed.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 127, 
         middleEvolution: false,
         baby: false,
@@ -2560,14 +2687,15 @@ export const POKEMON = [
         weight: "194.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 128,
         number: "#129",
         name: "Magikarp",
         description: "It is virtually worthless in terms of both power and speed. It is the most weak and pathetic Pokémon in the world.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 128, 
         middleEvolution: false,
         baby: false,
@@ -2580,14 +2708,15 @@ export const POKEMON = [
         weight: "22.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 129,
         number: "#130",
         name: "Gyarados",
         description: "It has an extremely aggressive nature. The Hyper Beam it shoots from its mouth totally incinerates all targets.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 128, 
         middleEvolution: false,
         baby: false,
@@ -2600,14 +2729,15 @@ export const POKEMON = [
         weight: "518.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 130,
         number: "#131",
         name: "Lapras",
         description: "A smart and kindhearted Pokémon, it glides across the surface of the sea while its beautiful song echoes around it.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 130, 
         middleEvolution: false,
         baby: false,
@@ -2620,14 +2750,15 @@ export const POKEMON = [
         weight: "485.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 131,
         number: "#132",
         name: "Ditto",
         description: "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 131, 
         middleEvolution: false,
         baby: false,
@@ -2640,14 +2771,15 @@ export const POKEMON = [
         weight: "8.8 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 132,
         number: "#133",
         name: "Evee",
         description: "It has the ability to alter the composition of its body to suit its surrounding environment.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 132, 
         middleEvolution: false,
         baby: false,
@@ -2660,14 +2792,15 @@ export const POKEMON = [
         weight: "14.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 133,
         number: "#134",
         name: "Vaporeon",
         description: "When Vaporeon’s fins begin to vibrate, it is a sign that rain will come within a few hours.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 132, 
         middleEvolution: false,
         baby: false,
@@ -2680,14 +2813,15 @@ export const POKEMON = [
         weight: "63.9 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 134,
         number: "#135",
         name: "Jolteon",
         description: "If it is angered or startled, the fur all over its body bristles like sharp needles that pierce foes.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 132,
         middleEvolution: false,
         baby: false,
@@ -2700,14 +2834,15 @@ export const POKEMON = [
         weight: "54.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 135,
         number: "#136",
         name: "Flareon",
         description: "Once it has stored up enough heat, this Pokémon’s body temperature can reach up to 1,700 degrees Fahrenheit.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 132,
         middleEvolution: false,
         baby: false,
@@ -2720,14 +2855,15 @@ export const POKEMON = [
         weight: "55.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 136,
         number: "#137",
         name: "Porygon",
         description: "State-of-the-art technology was used to create Porygon. It was the first artificial Pokémon to be created via computer programming.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 136,
         middleEvolution: false,
         baby: false,
@@ -2740,14 +2876,15 @@ export const POKEMON = [
         weight: "80.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 137,
         number: "#138",
         name: "Omanyte",
         description: "Because some Omanyte manage to escape after being restored or are released into the wild by people, this species is becoming a problem.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 137,
         middleEvolution: false,
         baby: false,
@@ -2761,14 +2898,15 @@ export const POKEMON = [
         weight: "16.5 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 138,
         number: "#139",
         name: "Omastar",
         description: "Weighed down by a large and heavy shell, Omastar couldn’t move very fast. Some say it went extinct because it was unable to catch food.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 137,
         middleEvolution: false,
         baby: false,
@@ -2782,14 +2920,15 @@ export const POKEMON = [
         weight: "77.2 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Ocean"
     },
     {
         id: 139,
         number: "#140",
         name: "Kabuto",
         description: "This species is almost entirely extinct. Kabuto molt every three days, making their shells harder and harder.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 139,
         middleEvolution: false,
         baby: false,
@@ -2803,14 +2942,15 @@ export const POKEMON = [
         weight: "25.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 140,
         number: "#141",
         name: "Kabutops",
         description: "Kabutops slices its prey apart and sucks out the fluids. The discarded body parts become food for other Pokémon.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 139, 
         middleEvolution: false,
         baby: false,
@@ -2824,14 +2964,15 @@ export const POKEMON = [
         weight: "89.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 141,
         number: "#142",
         name: "Areodactyl",
         description: "This is a ferocious Pokémon from ancient times. Apparently even modern technology is incapable of producing a perfectly restored specimen.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 141, 
         middleEvolution: false,
         baby: false,
@@ -2845,14 +2986,15 @@ export const POKEMON = [
         weight: "130.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 142,
         number: "#143",
         name: "Snorlax",
         description: "It is not satisfied unless it eats over 880 pounds of food every day. When it is done eating, it goes promptly to sleep.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 142, 
         middleEvolution: false,
         baby: false,
@@ -2865,14 +3007,15 @@ export const POKEMON = [
         weight: "1014.1 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Field"
     },
     {
         id: 143,
         number: "#144",
         name: "Articuno",
         description: "It’s said that this Pokémon’s beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it.", 
-        evolves: false,
+        evolves: false, rate: 3,
         evolutionId: 143, 
         middleEvolution: false,
         baby: false,
@@ -2885,14 +3028,15 @@ export const POKEMON = [
         weight: "122.1 LBS",
         generation: "1",
         caught: false,
-        legendary: true
+        legendary: true,
+        location: "Ocean"
     },
     {
         id: 144,
         number: "#145",
         name: "Zapdos",
         description: "This Pokémon has complete control over electricity. There are tales of Zapdos nesting in the dark depths of pitch-black thunderclouds.", 
-        evolves: false,
+        evolves: false, rate: 3,
         evolutionId: 144, 
         middleEvolution: false,
         baby: false,
@@ -2905,14 +3049,15 @@ export const POKEMON = [
         weight: "116.0 LBS",
         generation: "1",
         caught: false,
-        legendary: true
+        legendary: true,
+        location: "Mountain"
     },
     {
         id: 145,
         number: "#146",
         name: "Moltres",
         description: "It’s one of the legendary bird Pokémon. When Moltres flaps its flaming wings, they glimmer with a dazzling red glow.", 
-        evolves: false,
+        evolves: false, rate: 3,
         evolutionId: 145, 
         middleEvolution: false,
         baby: false,
@@ -2925,14 +3070,15 @@ export const POKEMON = [
         weight: "132.3 LBS",
         generation: "1",
         caught: false,
-        legendary: true
+        legendary: true,
+        location: "Field"
     },
     {
         id: 146,
         number: "#147",
         name: "Dratini",
         description: "Dratini dwells near bodies of rapidly flowing water, such as the plunge pools of waterfalls. As it grows, Dratini will shed its skin many times.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 146, 
         middleEvolution: false,
         baby: false,
@@ -2945,14 +3091,15 @@ export const POKEMON = [
         weight: "7.3 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 147,
         number: "#148",
         name: "Dragonair",
         description: "This Pokémon lives in pristine oceans and lakes. It can control the weather, and it uses this power to fly into the sky, riding on the wind.", 
-        evolves: true,
+        evolves: true, rate: 1,
         evolutionId: 146, 
         middleEvolution: true,
         baby: false,
@@ -2965,14 +3112,15 @@ export const POKEMON = [
         weight: "36.4 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 148,
         number: "#149",
         name: "Dragonite",
         description: "It’s a kindhearted Pokémon. If it spots a drowning person or Pokémon, Dragonite simply must help them.", 
-        evolves: false,
+        evolves: false, rate: 2,
         evolutionId: 146, 
         middleEvolution: false,
         baby: false,
@@ -2985,14 +3133,15 @@ export const POKEMON = [
         weight: "463.0 LBS",
         generation: "1",
         caught: false,
-        legendary: false
+        legendary: false,
+        location: "Mountain"
     },
     {
         id: 149,
         number: "#150",
         name: "Mewtwo",
         description: "Its DNA is almost the same as Mew’s. However, its size and disposition are vastly different.", 
-        evolves: false,
+        evolves: false, rate: 3,
         evolutionId: 149, 
         middleEvolution: false,
         baby: false,
@@ -3005,14 +3154,15 @@ export const POKEMON = [
         weight: "269.0 LBS",
         generation: "1",
         caught: false,
-        legendary: true
+        legendary: true,
+        location: "Cave"
     },
     {
         id: 150,
         number: "#151",
         name: "Mew",
         description: "When viewed through a microscope, this Pokémon’s short, fine, delicate hair can be seen.", 
-        evolves: false,
+        evolves: false, rate: 3,
         evolutionId: 150, 
         middleEvolution: false,
         baby: false,
@@ -3025,6 +3175,7 @@ export const POKEMON = [
         weight: "8.8 LBS",
         generation: "1",
         caught: false,
-        legendary: true
+        legendary: true,
+        location: "Forest"
     }
 ]
