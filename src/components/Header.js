@@ -32,7 +32,7 @@ function Header(){
                     <NavLink href="/YourTeams">Create Teams</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/catchThem">Catch Them</NavLink>
+                    <NavLink href="/locationselect">Catch Them</NavLink>
                 </NavItem>
             </Nav>
             </Collapse>

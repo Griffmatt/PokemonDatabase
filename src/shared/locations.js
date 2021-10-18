@@ -1,0 +1,1 @@
+export const LOCATIONS = [{location: "Cave", id: 0}, {location: "Field", id: 1}, {location: "Forest", id: 2}, {location: "Mountain", id: 3}, {location: "Ocean", id: 4}]

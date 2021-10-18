@@ -18,3 +18,8 @@ export const postSavedTeam = savedTeams => ({
     type: ActionTypes.POST_SAVED_TEAM,
     payload: savedTeams
 });
+
+export const addLocation = location => ({
+    type: ActionTypes.ADD_LOCATION,
+    payload: location
+});

@@ -4,13 +4,15 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import {Leaders} from './gymLeaders'
 import { SavedTeams } from './savedTeams';
+import { Locations } from './locations';
 
 export const ConfigureStore = () => {
     const store = createStore(
         combineReducers({
             pokemon: Pokemon,
             leaders: Leaders,
-            savedTeams: SavedTeams
+            savedTeams: SavedTeams,
+            locations: Locations
         }), 
         applyMiddleware(thunk, logger) 
     );

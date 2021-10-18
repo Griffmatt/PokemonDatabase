@@ -18,7 +18,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 1,
@@ -39,7 +39,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 2,
@@ -60,7 +60,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 3,
@@ -81,7 +81,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 4,
@@ -102,7 +102,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 5,
@@ -123,7 +123,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 6,
@@ -144,7 +144,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 7,
@@ -165,7 +165,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 8,
@@ -186,7 +186,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 9,
@@ -207,7 +207,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 10,
@@ -228,7 +228,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 11,
@@ -249,7 +249,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 12,
@@ -270,7 +270,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 13,
@@ -291,7 +291,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 14,
@@ -312,7 +312,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 15,
@@ -333,7 +333,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 16,
@@ -354,7 +354,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 17,
@@ -375,7 +375,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 18,
@@ -396,7 +396,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 19,
@@ -417,7 +417,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 20,
@@ -438,7 +438,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 21,
@@ -459,7 +459,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 22,
@@ -480,7 +480,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 23,
@@ -501,7 +501,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 24,
@@ -522,7 +522,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 25,
@@ -543,7 +543,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 26,
@@ -564,7 +564,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 27,
@@ -585,7 +585,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 28,
@@ -606,7 +606,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 29,
@@ -627,7 +627,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 30,
@@ -649,7 +649,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 31,
@@ -670,7 +670,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 32,
@@ -691,7 +691,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 33,
@@ -713,7 +713,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 34,
@@ -734,7 +734,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 35,
@@ -756,7 +756,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 36,
@@ -777,7 +777,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 37,
@@ -798,7 +798,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 38,
@@ -819,7 +819,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 39,
@@ -840,7 +840,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 40,
@@ -861,7 +861,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 41,
@@ -882,7 +882,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 42,
@@ -903,7 +903,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 43,
@@ -924,7 +924,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 44,
@@ -945,7 +945,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 45,
@@ -966,7 +966,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 46,
@@ -987,7 +987,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 47,
@@ -1008,7 +1008,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 48,
@@ -1029,7 +1029,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 49,
@@ -1050,7 +1050,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 50,
@@ -1071,7 +1071,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 51,
@@ -1092,7 +1092,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 52,
@@ -1113,7 +1113,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 53,
@@ -1134,7 +1134,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 54,
@@ -1155,7 +1155,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 55,
@@ -1176,7 +1176,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 56,
@@ -1197,7 +1197,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 57,
@@ -1218,7 +1218,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 58,
@@ -1239,7 +1239,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 59,
@@ -1260,7 +1260,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 60,
@@ -1281,7 +1281,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 61,
@@ -1302,7 +1302,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 62,
@@ -1323,7 +1323,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 63,
@@ -1344,7 +1344,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 64,
@@ -1365,7 +1365,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 65,
@@ -1386,7 +1386,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 66,
@@ -1407,7 +1407,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 67,
@@ -1428,7 +1428,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 68,
@@ -1449,7 +1449,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 69,
@@ -1470,7 +1470,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 70,
@@ -1491,7 +1491,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 71,
@@ -1512,7 +1512,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 72,
@@ -1533,7 +1533,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 73,
@@ -1554,7 +1554,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 74,
@@ -1575,7 +1575,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 75,
@@ -1596,7 +1596,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 76,
@@ -1617,7 +1617,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 77,
@@ -1638,7 +1638,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 78,
@@ -1659,7 +1659,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 79,
@@ -1680,7 +1680,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 80,
@@ -1701,7 +1701,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 81,
@@ -1722,7 +1722,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 82,
@@ -1743,7 +1743,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 83,
@@ -1764,7 +1764,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 84,
@@ -1785,7 +1785,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 85,
@@ -1806,7 +1806,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 86,
@@ -1827,7 +1827,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 87,
@@ -1848,7 +1848,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 88,
@@ -1869,7 +1869,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 89,
@@ -1890,7 +1890,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 90,
@@ -1911,7 +1911,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 91,
@@ -1932,7 +1932,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 92,
@@ -1953,7 +1953,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 93,
@@ -1974,7 +1974,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Forest"
+        location: "Forest", locationId: 2
     },
     {
         id: 94,
@@ -1995,7 +1995,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 95,
@@ -2016,7 +2016,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 96,
@@ -2037,7 +2037,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 97,
@@ -2058,7 +2058,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 98,
@@ -2079,7 +2079,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 99,
@@ -2100,7 +2100,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 100,
@@ -2121,7 +2121,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 101,
@@ -2142,7 +2142,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 102,
@@ -2163,7 +2163,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 103,
@@ -2184,7 +2184,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 104,
@@ -2205,7 +2205,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 105,
@@ -2226,7 +2226,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 106,
@@ -2247,7 +2247,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 107,
@@ -2268,7 +2268,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 108,
@@ -2289,7 +2289,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 109,
@@ -2310,7 +2310,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 110,
@@ -2331,7 +2331,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 111,
@@ -2352,7 +2352,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 112,
@@ -2373,7 +2373,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 113,
@@ -2394,7 +2394,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 114,
@@ -2415,7 +2415,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 115,
@@ -2436,7 +2436,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 116,
@@ -2457,7 +2457,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 117,
@@ -2478,7 +2478,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 118,
@@ -2499,7 +2499,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 119,
@@ -2520,7 +2520,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 120,
@@ -2541,7 +2541,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 121,
@@ -2562,7 +2562,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 122,
@@ -2583,7 +2583,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 123,
@@ -2604,7 +2604,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 124,
@@ -2625,7 +2625,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 125,
@@ -2646,7 +2646,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 126,
@@ -2667,7 +2667,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 127,
@@ -2688,7 +2688,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 128,
@@ -2709,7 +2709,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 129,
@@ -2730,7 +2730,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 130,
@@ -2751,7 +2751,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 131,
@@ -2772,7 +2772,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 132,
@@ -2793,7 +2793,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 133,
@@ -2814,7 +2814,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 134,
@@ -2835,7 +2835,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 135,
@@ -2856,7 +2856,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 136,
@@ -2877,7 +2877,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 137,
@@ -2899,7 +2899,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 138,
@@ -2921,7 +2921,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 139,
@@ -2943,7 +2943,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 140,
@@ -2965,7 +2965,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 141,
@@ -2987,7 +2987,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 142,
@@ -3008,7 +3008,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 143,
@@ -3029,7 +3029,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: true,
-        location: "Ocean"
+        location: "Ocean", locationId: 4
     },
     {
         id: 144,
@@ -3050,7 +3050,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: true,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 145,
@@ -3071,7 +3071,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: true,
-        location: "Field"
+        location: "Field", locationId: 1
     },
     {
         id: 146,
@@ -3092,7 +3092,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 147,
@@ -3113,7 +3113,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 148,
@@ -3134,7 +3134,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: false,
-        location: "Mountain"
+        location: "Mountain", locationId: 3
     },
     {
         id: 149,
@@ -3155,7 +3155,7 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: true,
-        location: "Cave"
+        location: "Cave", locationId: 0
     },
     {
         id: 150,
@@ -3176,6 +3176,6 @@ export const POKEMON = [
         generation: "1",
         caught: false,
         legendary: true,
-        location: "Forest"
+        location: "Forest", locationId: 2
     }
 ]
