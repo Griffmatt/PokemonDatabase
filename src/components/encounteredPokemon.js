@@ -132,9 +132,7 @@ function BattleBox({pokemon, addCaughtPokemon, caughtPokemon}){
                         </Row>
                         <Row className="mx-auto">
                             <Col>
-                                <Link to={`/caughtPokemon`}>  
-                                    <Button className="modalBtn" onClick={addToTeam} type="button">Add To Team!</Button>
-                                </Link>
+                                <Button className="modalBtn" onClick={addToTeam} type="button">Add To Team!</Button>
                             </Col>
                             <Col>
                                 <Button onClick={closeModal} className="modalBtn">Don't Add To PC</Button>
