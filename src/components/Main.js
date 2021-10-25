@@ -7,8 +7,9 @@ import Header from './Header';
 import SelectLocation from './setLocation';
 import SearchLocation from './search';
 import EncounteredPokemon from './encounteredPokemon';
-import BattleBox from './battleBox';
+import CaughtPokemon from './caughtPokemon';
 import { addSavedTeam } from '../redux/ActionCreators';
+import { addCaughtPokemon } from '../redux/ActionCreators';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -19,13 +20,15 @@ const mapStateToProps = state => {
         pokemon: state.pokemon,
         leaders: state.leaders,
         savedTeams: state.savedTeams,
-        locations: state.locations
+        locations: state.locations,
+        caughtPokemon: state.caughtPokemon
        
     };
 };
 
 const mapDispatchToProps = {
-    addSavedTeam
+    addSavedTeam,
+    addCaughtPokemon
 }
 
 
@@ -52,17 +55,13 @@ class Main extends Component {
         };
         
         const FoundPoke = ({match}) => {
-            return (
-                <div className="container">
-                    <EncounteredPokemon
-                        pokemon={this.props.pokemon.pokemon.filter(pokemon => pokemon.id === +match.params.foundId)[0]}
-                        location={this.props.locations.locations} 
-                    />
-                    <BattleBox
-                        pokemon={this.props.pokemon.pokemon.filter(pokemon => pokemon.id === +match.params.foundId)[0]}
-                        location={this.props.locations.locations} 
-                    />
-                </div>
+            return (             
+                <EncounteredPokemon
+                    pokemon={this.props.pokemon.pokemon.filter(pokemon => pokemon.id === +match.params.foundId)[0]}
+                    location={this.props.locations.locations} 
+                    addCaughtPokemon={this.props.addCaughtPokemon}
+                    caughtPokemon={this.props.caughtPokemon.caughtPokemon}
+                />   
             )
         };
 
@@ -77,6 +76,7 @@ class Main extends Component {
                     <Route exact path='/locationselect' render={() => <SelectLocation locations={this.props.locations}/>} />
                     <Route exact path='/locationselect/:id' component={SelectedLocation} />
                     <Route exact path='/locationselect/:id/:foundId' component={FoundPoke} />
+                    <Route exact path='/caughtPokemon' render={() => <CaughtPokemon pokemon={this.props.caughtPokemon.caughtPokemon[-1]}/>} />
                     <Redirect to='/kantoPokedex' />
                 </Switch>          
             </div>

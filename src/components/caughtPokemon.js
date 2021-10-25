@@ -2,7 +2,7 @@ import React from 'react';
 import { Link} from 'react-router-dom';
 import { Card, CardImg, CardTitle, CardHeader, CardBody, Row, Container, Col, CardText, Button} from 'reactstrap';
 
-function RenderPokemonInfo({pokemon, pokemonArr}) {
+function RenderPokemon({pokemon}) {
     return (
         <Card>
             <CardHeader className="cardHeader">
@@ -56,14 +56,6 @@ function RenderPokemonInfo({pokemon, pokemonArr}) {
                     </Col>
                 </Row>
              </CardBody>
-            <CardBody className="stripeBackground"> 
-                <Row>
-                    <h2 bolder="true">Evolution Line</h2>
-                    <div className="list-unstyled" tg="ul">
-                        <RenderEvolotions pokemonArr={pokemonArr} pokemonId={pokemon.evolutionId} />
-                    </div>
-                </Row>
-            </CardBody>
         </Card>
     );
 }
@@ -105,47 +97,13 @@ function RenderWeakeness({pokemon}){
     )
         
 }
-function RenderEvolotions ({pokemonArr, pokemonId}) {
-    const evolutions = pokemonArr.filter(evolution => evolution.evolutionId === pokemonId).map(evolution => {
-        if(evolution.evolves===true && window.innerWidth > 800){
-        
-        return(
-            <div key={evolution.id} className="col">
-                <li className="col mx-auto">
-                    <Link to={`/kantoPokedex/${evolution.id}`}>
-                        <CardImg  src={evolution.image} alt={evolution.name} className="evoBackground" />
-                        <CardText className="blackLink">{evolution.number} <br/> {evolution.name}</CardText>
-                    </Link>
-                </li>
-            </div>
-        )
-        }
-        else{
-            return(
-                <div key={evolution.id} className="col">
-                    <li className="col mx-auto">
-                    <Link to={`/kantoPokedex/${evolution.id}`}>
-                        <CardImg  src={evolution.image} alt={evolution.name} className="evoBackground" />
-                        <CardText className="blackLink">{evolution.number} <br/> {evolution.name}</CardText>
-                    </Link>
-                    </li>
-                </div>
-            )
-        }
-    })
-    return(
-            <Row>
-                {evolutions}
-            </Row>
-    )
-}
 
-function PokemonInfo(props){
+function CaughtPokemon({pokemon}){
     return(
         <Container>
-                <RenderPokemonInfo pokemon={props.pokemon} pokemonArr={props.pokemonArr}/>
+                <RenderPokemon pokemon={pokemon}/>
         </Container>
     )
 }
 
-export default PokemonInfo;
+export default CaughtPokemon;

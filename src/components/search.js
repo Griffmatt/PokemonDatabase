@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Container, Row, Button} from 'reactstrap';
+import {Container, Row, Button, CardText, CardImg} from 'reactstrap';
 
 
 function SearchLocation({location, pokemon}){
@@ -24,6 +24,17 @@ function SearchLocation({location, pokemon}){
     const foundPokemon = [findablePokemon[randomNumber]]
     const foundPoke = foundPokemon[0]
 
+    const pokemonInLocation = pokemon.map(pokemon => {
+        return (
+            <div key={pokemon.id} className="col">
+                <li className="col mx-auto">
+                    <CardImg  src={pokemon.image} alt={pokemon.name} className="evoBackground" />
+                    <CardText className="blackLink">{pokemon.number} <br/> {pokemon.name}</CardText>                
+                </li>
+            </div>
+        );
+    }); 
+
     
     return(
         <Container>
@@ -37,6 +48,18 @@ function SearchLocation({location, pokemon}){
                     </Link>
                 </Row>
             </div>
+            <Container>
+                <Row>
+                    <h2>Current Pokemon In This Location!</h2>
+                </Row>
+                <Row>
+                    <div className="list-unstyled" tg="ul">
+                        <Row>
+                            {pokemonInLocation}
+                        </Row>
+                    </div>
+                </Row>
+            </Container>
         </Container>
     )
 }

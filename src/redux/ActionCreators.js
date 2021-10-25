@@ -14,6 +14,15 @@ export const addSavedTeam = savedTeams => dispatch => {
     dispatch(postSavedTeam(savedTeams));   
 };
 
+export const postCaughtPokemon = caughtPokemon => ({
+    type: ActionTypes.POST_CAUGHT_POKEMON,
+    payload: caughtPokemon
+});
+
+export const addCaughtPokemon = CaughtPokemon => dispatch => {
+    dispatch(postCaughtPokemon(CaughtPokemon));   
+};
+
 export const postSavedTeam = savedTeams => ({
     type: ActionTypes.POST_SAVED_TEAM,
     payload: savedTeams

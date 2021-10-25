@@ -129,6 +129,13 @@ Button {
   border-radius: 15px;
 }
 
+.modalBtn{
+  width: 12em;
+  height: 5em;
+  
+  border-radius: 15px;
+}
+
 .infoTitle {
     font-size: calc(2em + 1vmin);
     font-weight: 700;
