@@ -120,21 +120,39 @@ Button {
   height: 7em;
   font-size: 2em;
   border-radius: 15px;
+  background-color: rgb(60, 102, 35);
+}
+
+.backToLocationBtn{
+  background-color: #2e8bc0;
+}
+
+.backToLocationBtn:hover{
+  background-color: #2c7dac;
 }
 
 .optionBtn{
   width: 15em;
   height: 5em;
-  
+  background-color: #c75554;
   border-radius: 15px;
+}
+
+.optionBtn:hover{
+  background-color: #ad4442;
 }
 
 .modalBtn{
   width: 12em;
   height: 5em;
-  
+  background-color: #c75554;
   border-radius: 15px;
 }
+
+.modalBtn:hover{
+  background-color: #ad4442;
+}
+
 
 .infoTitle {
     font-size: calc(2em + 1vmin);

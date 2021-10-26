@@ -52,7 +52,8 @@ function BattleBox({pokemon, addCaughtPokemon, caughtPokemon}){
     }
 
     const addToTeam = () => {
-        const pokemonCaught = ({...pokemon, named: pokeName})
+        const gender = pokemon.gender[Math.floor(Math.random() * pokemon.gender.length)]
+        const pokemonCaught = ({...pokemon, named: pokeName, gendered: gender})
         addCaughtPokemon(pokemonCaught)
         setIsOpen(false)  
       }
@@ -132,7 +133,12 @@ function BattleBox({pokemon, addCaughtPokemon, caughtPokemon}){
                         </Row>
                         <Row className="mx-auto">
                             <Col>
-                                <Button className="modalBtn" onClick={addToTeam} type="button">Add To Team!</Button>
+                                <Link to={{
+                                    pathname:`/caughtPokemon/${pokemon.id}`,
+                                    state:{named: {pokeName}}
+                            }}>
+                                    <Button className="modalBtn" onClick={addToTeam} type="button">Add To Team!</Button>
+                                </Link>
                             </Col>
                             <Col>
                                 <Button onClick={closeModal} className="modalBtn">Don't Add To PC</Button>
@@ -166,7 +172,7 @@ function CaughtPokemon({caughtPokemon}){
                         <CardImg top width="100%" src={pokemon.image} alt={pokemon.name}  />
                         </CardHeader>
                         <CardBody>
-                            <CardTitle tag="h5" className="blackLink">{pokemon.named} {pokemon.number}</CardTitle>
+                            <CardTitle tag="h5" className="blackLink">{pokemon.named} {pokemon.number} {pokemon.gendered}</CardTitle>
                         </CardBody>
                     </Card>
                 </CardDeck>

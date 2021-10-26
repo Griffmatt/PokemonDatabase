@@ -3,13 +3,18 @@ import { Link} from 'react-router-dom';
 import { Card, CardImg, CardTitle, CardHeader, CardBody, Row, Container, Col, CardText, Button} from 'reactstrap';
 
 function RenderPokemon({pokemon}) {
+    
+   
+
     return (
         <Card>
             <CardHeader className="cardHeader">
                 <Row>
-                    <Link to={"/kantoPokedex"} className="d-flex"><i className="fa fa-arrow-left fa-lg text-black" aria-hidden="true"/></Link> 
                     <CardTitle className="infoTitle">
-                        {pokemon.name} {pokemon.number}
+                        <h2>
+                            You caught a {pokemon.name},<br/>
+                            they have been added to your PC!
+                        </h2>
                     </CardTitle>
                 </Row>
             </CardHeader>
@@ -34,7 +39,7 @@ function RenderPokemon({pokemon}) {
                                     <dt>Weight</dt>
                                     <dd>{pokemon.weight}</dd>
                                     <dt>Gender</dt>
-                                    <dd>{pokemon.gender[0]} {pokemon.gender[1]}</dd>
+                                    <dd>{pokemon.gender[0]}</dd>
                                 </dl>
                             </Col>
                             </Row>
@@ -54,6 +59,14 @@ function RenderPokemon({pokemon}) {
                             </Row>
                         </Card>
                     </Col>
+                </Row>
+                <Row>
+                <Col className="col mt-5 mb-5">
+                    <Button className="optionBtn">Go To PC</Button> {" "}
+                    <Link to={`/locationselect/${pokemon.locationId}`}>   
+                        <Button className="optionBtn">Look For New Pokemon</Button>   
+                    </Link>                                                       
+                </Col> 
                 </Row>
              </CardBody>
         </Card>

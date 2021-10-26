@@ -3145,7 +3145,7 @@ export const POKEMON = [
         evolutionId: 149, 
         middleEvolution: false,
         baby: false,
-        gender: ["Female", "Male"],
+        gender: ["Unknown"],
         category: "Genetic",
         image: "/assets/images/150.png", 
         type: ["Psychic"], 

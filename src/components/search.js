@@ -39,12 +39,14 @@ function SearchLocation({location, pokemon}){
     return(
         <Container>
             <div className={location.location} key={foundPoke.id} >
-                <Row>
-                    <Button href='/locationselect'>Click here to select A New Location!</Button>
-                </Row>
+                <Container>
+                    <Row>
+                        <Button href='/locationselect' className="backToLocationBtn">Click here to select A New Location!</Button>                 
+                    </Row>
+                </Container>
                 <Row >
                     <Link to={`/locationselect/${foundPoke.locationId}/${foundPoke.id}`}>
-                        <Button className='locationBtn mx-auto mt-5 mb-5 ' value={location.location} type="button">Search for a pokemon in the {location.location}</Button>
+                        <Button className='locationBtn mx-auto mt-5 mb-5' value={location.location} type="button">Search for a pokemon in the {location.location}</Button>
                     </Link>
                 </Row>
             </div>

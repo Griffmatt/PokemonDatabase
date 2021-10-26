@@ -65,6 +65,15 @@ class Main extends Component {
             )
         };
 
+        const Caught = ({match}) => {
+            return (             
+                <CaughtPokemon
+                    caughtPokemon={this.props.caughtPokemon.caughtPokemon}
+                    pokemon={this.props.pokemon.pokemon.filter(pokemon => pokemon.id === +match.params.foundId)[0]}
+                />   
+            )
+        }
+
         return (
             <div>
                 <Header/>
@@ -76,7 +85,7 @@ class Main extends Component {
                     <Route exact path='/locationselect' render={() => <SelectLocation locations={this.props.locations}/>} />
                     <Route exact path='/locationselect/:id' component={SelectedLocation} />
                     <Route exact path='/locationselect/:id/:foundId' component={FoundPoke} />
-                    <Route exact path='/caughtPokemon' render={() => <CaughtPokemon pokemon={this.props.caughtPokemon.caughtPokemon[-1]}/>} />
+                    <Route exact path='/caughtPokemon/:foundId' component={Caught} />
                     <Redirect to='/kantoPokedex' />
                 </Switch>          
             </div>
