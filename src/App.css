@@ -120,7 +120,11 @@ Button {
   height: 7em;
   font-size: 2em;
   border-radius: 15px;
-  background-color: rgb(60, 102, 35);
+  background-color: rgb(60, 102, 35) !important;
+}
+
+.locationBtn:hover{
+  opacity:calc(75);
 }
 
 .backToLocationBtn{
@@ -233,21 +237,21 @@ ol > li:nth-child(odd) {
 }
 
 .Cave {
-  background-image: url(./images/Cave.png);
+  background-color: rgb(167, 133, 90) !important;
 }
 
 .Mountain {
-  background-image: url(./images/mountain.png);
+  background-color: burlywood !important;
 }
 
 .Forest {
-  background-image: url(./images/forest.jpg);
+  background-color: darkgreen !important;
 }
 
 .Field {
-  background-image: url(./images/field.jpg);
+  background-color: rgb(158, 179, 68) !important;
 }
 
 .Ocean {
-  background-image: url(./images/ocean.jpg);
+  background-color: mediumblue !important;
 }
