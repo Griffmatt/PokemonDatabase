@@ -5,11 +5,11 @@ import { Card, CardDeck, CardImg, CardTitle, CardHeader, CardBody, Row, Containe
 
 function RenderPokemonItem({pokemon}) {
     return (
-        <CardDeck className="pt-2 shadow">
+        <CardDeck className=" shadow">
             <Link to={`/kantoPokedex/${pokemon.id}`}>         
                 <Card>
                     <CardHeader>
-                    <CardImg top width="100%" src={pokemon.image} alt={pokemon.name}  />
+                    <CardImg  height="100%" width="auto" src={pokemon.image} alt={pokemon.name}  />
                     </CardHeader>
                     <CardBody>
                         <CardTitle tag="h5" className="blackLink">{pokemon.name} {pokemon.number}</CardTitle>
@@ -40,7 +40,7 @@ function KantoPokedex(props){
 
     const pokedex = props.pokemon.pokemon.filter(pokemon => pokemon.name.toLowerCase().startsWith(filter.toLowerCase()) || filter === ''  || pokemon.number.includes(filter)).map(pokemon => {
         return (
-            <div key={pokemon.id} className="col-md-4 col-xs-6">
+            <div key={pokemon.id} className="col-md-4 col-xs-6 pokeCard mt-3">
                 <RenderPokemonItem pokemon={pokemon} />
             </div>
         );
