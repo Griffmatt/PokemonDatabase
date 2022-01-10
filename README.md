@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# https://fervent-lovelace-cc0bc8.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Using React, and redux created a pokedex, randomized teams that you can save, aswell as a game that lets you catch different pokemon, name them, and then save them to your teams.
 
 ## Available Scripts
 
