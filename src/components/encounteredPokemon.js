@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Button, Card, CardBody, CardHeader, CardImg, CardTitle, CardDeck, Input, Modal, Label, Form, CardText } from 'reactstrap';
+import { Container, Row, Col, Button, Card, CardBody, CardHeader, CardImg, CardTitle, CardDeck, Input, Modal, Label} from 'reactstrap';
 
 function FoundPokemon({pokemon}){
   
@@ -11,8 +11,8 @@ function FoundPokemon({pokemon}){
             </Row>
             <Row>            
                 <div key={pokemon.id}>
-                    <div className={pokemon.location}>
-                        <img src={pokemon.image} alt={pokemon.name}/>
+                    <div className={`${pokemon.location}`}>
+                        <CardImg src={pokemon.image} alt={pokemon.name} height="100%" width="auto" className="encounteredImg"/>
                     </div>
                     <h2>{pokemon.name} - {pokemon.number} - {pokemon.location}</h2>
                 </div>
@@ -61,17 +61,17 @@ function BattleBox({pokemon, addCaughtPokemon, caughtPokemon}){
     function BattleButtons({pokemon}){
         if (caught){
             return(
-                <Col className="col-5 mt-5 mb-5">
-                    <Button className="optionBtn" onClick={openModal} >Add To PC</Button> {" "}
+                <Col className="col-12 col-sm-5 mt-sm-5 mb-2">
+                    <Button className="optionBtn mb-1" onClick={openModal} >Add To PC</Button> {" "}
                     <Link to={`/locationselect/${pokemon.locationId}`}>   
-                        <Button className="optionBtn">Look For New Pokemon</Button>   
+                        <Button className="optionBtn mb-1">Look For New Pokemon</Button>   
                     </Link>                                                       
                 </Col>  
             )
         }
         else if(i === 5){
             return(
-                <Col className="col-5 mt-5 mb-5">
+                <Col className="col-12 col-sm-5 mt-sm-5 mb-2">
                     <Link to={`/locationselect/${pokemon.locationId}`}>   
                         <Button className="optionBtn">Look For New Pokemon</Button>   
                     </Link>                                                       
@@ -80,12 +80,12 @@ function BattleBox({pokemon, addCaughtPokemon, caughtPokemon}){
         }
         else{
             return(
-                <Col className="col-5 mt-5 mb-5">
+                <Col className="col-12 col-sm-5 mt-sm-5 mb-2">
                     <Button onClick={tryToCatch}
-                        className="optionBtn">Try to Catch!
+                        className="optionBtn mb-1">Try to Catch!
                         </Button> {" "}
                     <Link to={`/locationselect/${pokemon.locationId}`}>   
-                        <Button className="optionBtn">Run away!</Button>   
+                        <Button className="optionBtn mb-1">Run away!</Button>   
                     </Link>                                                       
                 </Col>  
             )
@@ -132,27 +132,27 @@ function BattleBox({pokemon, addCaughtPokemon, caughtPokemon}){
                             </Label>
                         </Row>
                         <Row className="mx-auto">
-                            <Col>
+                            <Col className="col col-sm-6 mt-sm-5 mb-2">
                                 <Link to={{
                                     pathname:`/caughtPokemon/${pokemon.id}`,
                                     state:{named: {pokeName}}
                             }}>
-                                    <Button className="modalBtn" onClick={addToTeam} type="button">Add To Team!</Button>
+                                    <Button className="modalBtn mb-1" onClick={addToTeam} type="button">Add To Team!</Button>
                                 </Link>
                             </Col>
-                            <Col>
-                                <Button onClick={closeModal} className="modalBtn">Don't Add To PC</Button>
+                            <Col className="col col-sm-5 mt-sm-5 mb-2">
+                                <Button onClick={closeModal} className="modalBtn mb-1">Don't Add To PC</Button>
                             </Col>
                         </Row>                 
                     </CardBody>
                 </Card>
             </Modal>
             <Row> 
-            <Col className="col-7">
+            <Col className="col-sm-7 col-12">
                     <CardBody>
                         <BattleMessages pokemon={pokemon} caughtPokemon={caughtPokemon}/>
                     </CardBody>
-            </Col> 
+            </Col>
                 <BattleButtons pokemon={pokemon}/>
             </Row>
         </Card>

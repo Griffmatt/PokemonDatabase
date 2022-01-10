@@ -62,9 +62,12 @@ function RenderPokemon({pokemon}) {
                 </Row>
                 <Row>
                 <Col className="col mt-5 mb-5">
-                    <Button className="optionBtn">Go To PC</Button> {" "}
+                    <Link to={'/pc'}>
+                    <Button className="optionBtn mb-1">Go To PC</Button>
+                    </Link>
+                     {" "}
                     <Link to={`/locationselect/${pokemon.locationId}`}>   
-                        <Button className="optionBtn">Look For New Pokemon</Button>   
+                        <Button className="optionBtn mb-1">Look For New Pokemon</Button>   
                     </Link>                                                       
                 </Col> 
                 </Row>

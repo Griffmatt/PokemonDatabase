@@ -95,6 +95,23 @@ Button {
   font-size: 2em;
   border-radius: 15px;
   background-color: rgb(60, 102, 35) !important;
+  margin-bottom:2px;
+}
+
+.encounteredImg{
+  max-height: 500px;
+  max-width:500px;
+}
+
+@media screen and (max-width:768px) {
+  .locationBtn {
+  width: 90vw;
+  height: 7em;
+  font-size: 2em;
+  border-radius: 15px;
+  background-color: rgb(60, 102, 35) !important;
+  margin-bottom:2px;
+  }
 }
 
 .locationBtn:hover{
@@ -121,7 +138,7 @@ Button {
 }
 
 .modalBtn{
-  width: 12em;
+  width: 14em;
   height: 5em;
   background-color: #c75554;
   border-radius: 15px;

@@ -8,6 +8,7 @@ import SelectLocation from './setLocation';
 import SearchLocation from './search';
 import EncounteredPokemon from './encounteredPokemon';
 import CaughtPokemon from './caughtPokemon';
+import Pc from './pc';
 import { addSavedTeam } from '../redux/ActionCreators';
 import { addCaughtPokemon } from '../redux/ActionCreators';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
@@ -86,6 +87,7 @@ class Main extends Component {
                     <Route exact path='/locationselect/:id' component={SelectedLocation} />
                     <Route exact path='/locationselect/:id/:foundId' component={FoundPoke} />
                     <Route exact path='/caughtPokemon/:foundId' component={Caught} />
+                    <Route exact path='/pc' render={() => <Pc caughtPokemon={this.props.caughtPokemon.caughtPokemon}/>} />
                     <Redirect to='/kantoPokedex' />
                 </Switch>          
             </div>

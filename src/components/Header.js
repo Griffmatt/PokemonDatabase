@@ -34,6 +34,9 @@ function Header(){
                 <NavItem>
                     <NavLink href="/locationselect">Catch Them</NavLink>
                 </NavItem>
+                <NavItem>
+                    <NavLink href="/pc">PC</NavLink>
+                </NavItem>
             </Nav>
             </Collapse>
         </div>
