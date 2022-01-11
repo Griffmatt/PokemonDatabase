@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Pagination from './pagination';
 import { Link } from 'react-router-dom';
 import { Card, CardDeck, CardImg, CardTitle, CardHeader, CardBody, Row, Container, Button, Input, Col } from 'reactstrap';
 
@@ -35,22 +36,31 @@ function RenderButton({pokemon}){
 }
 
 function KantoPokedex(props){
-
+    const[currentPage, setCurrentPage]=useState(1)
+    const[pokemonPerPage, setPokemonPerPage]=useState(42)
     const [filter, setFilter] = useState('');
 
-    const pokedex = props.pokemon.pokemon.filter(pokemon => pokemon.name.toLowerCase().startsWith(filter.toLowerCase()) || filter === ''  || pokemon.number.includes(filter)).map(pokemon => {
+    const indexOfLastPokemon = currentPage * pokemonPerPage;
+    const indexOfFirstPokemon = indexOfLastPokemon - pokemonPerPage
+    const paginate = (pageNumber) => {setCurrentPage(pageNumber); setFilter('')};
+
+    let currentPokemon = filter===''?props.pokemon.pokemon.slice(indexOfFirstPokemon, indexOfLastPokemon):props.pokemon.pokemon
+
+
+    const pokedex = currentPokemon.filter(pokemon => pokemon.name.toLowerCase().startsWith(filter.toLowerCase()) || filter === ''  || pokemon.number.includes(filter)).map(pokemon => {
         return (
             <div key={pokemon.id} className="col-md-4 col-xs-6 pokeCard mt-3">
                 <RenderPokemonItem pokemon={pokemon} />
             </div>
-        );
+        ); 
     }); 
+
     return(
         <Container>
             <Row>
                 <h2>Pokedex</h2>
             </Row>
-            <Row>
+            <Row >
                 <Col className="col-md-4 offset-md-8" >
                     <Input id="filter"
                         name="filter"
@@ -61,6 +71,11 @@ function KantoPokedex(props){
                     />
                 </Col>
             </Row>
+                <Col className="col-md-4 offset-md-8 justify-content-end">
+                    <Pagination
+                        paginate={paginate}
+                    />
+                </Col>
             <Row>
                 {pokedex}
             </Row>
