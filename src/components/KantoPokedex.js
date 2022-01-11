@@ -37,7 +37,7 @@ function RenderButton({pokemon}){
 
 function KantoPokedex(props){
     const[currentPage, setCurrentPage]=useState(1)
-    const[pokemonPerPage, setPokemonPerPage]=useState(42)
+    const[pokemonPerPage]=useState(42)
     const [filter, setFilter] = useState('');
 
     const indexOfLastPokemon = currentPage * pokemonPerPage;
@@ -49,7 +49,7 @@ function KantoPokedex(props){
 
     const pokedex = currentPokemon.filter(pokemon => pokemon.name.toLowerCase().startsWith(filter.toLowerCase()) || filter === ''  || pokemon.number.includes(filter)).map(pokemon => {
         return (
-            <div key={pokemon.id} className="col-md-4 col-xs-6 pokeCard mt-3">
+            <div key={pokemon.id} className="col-md-4 col-xs-6 pokeCard ">
                 <RenderPokemonItem pokemon={pokemon} />
             </div>
         ); 
@@ -68,15 +68,18 @@ function KantoPokedex(props){
                         value={filter}
                         onChange={event => setFilter(event.target.value)}
                         autoComplete="off"
+                        placeholder='Search For a Pokemon'
                     />
                 </Col>
             </Row>
-                <Col className="col-md-4 offset-md-8 justify-content-end">
+            <Row>
+                <Col className="col-12 d-flex justify-content-center">
                     <Pagination
                         paginate={paginate}
                     />
                 </Col>
-            <Row>
+            </Row>
+            <Row className="pb-5">
                 {pokedex}
             </Row>
         </Container>
