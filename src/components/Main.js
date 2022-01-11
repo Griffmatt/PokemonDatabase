@@ -35,6 +35,7 @@ const mapDispatchToProps = {
 
 
 class Main extends Component {
+
      render(){
 
         const PokemonId = ({match}) => {
@@ -82,12 +83,12 @@ class Main extends Component {
                     <Route exact path='/kantopokedex' render={() => <KantoPokedex pokemon={this.props.pokemon} />} />
                     <Route path="/kantopokedex/:id"  component={PokemonId} />
                     <Route exact path='/kantoleaders' render={() => <KantoLeaders leaders={this.props.leaders} />} />
-                    <Route exact path='/yourteams' render={() => <Teams pokemon={this.props.pokemon.pokemon} savedTeams={this.props.savedTeams.savedTeams} addSavedTeam={this.props.addSavedTeam}/>}/>
+                    <Route exact path='/yourteams' render={() => <Teams pokemon={this.props.pokemon.pokemon} savedTeams={this.props.savedTeams.savedTeams} addSavedTeam={this.props.addSavedTeam} caughtPokemon={this.props.caughtPokemon.caughtPokemon}/>}/>
                     <Route exact path='/locationselect' render={() => <SelectLocation locations={this.props.locations}/>} />
                     <Route exact path='/locationselect/:id' component={SelectedLocation} />
                     <Route exact path='/locationselect/:id/:foundId' component={FoundPoke} />
                     <Route exact path='/caughtPokemon/:foundId' component={Caught} />
-                    <Route exact path='/pc' render={() => <Pc caughtPokemon={this.props.caughtPokemon.caughtPokemon}/>} />
+                    <Route exact path='/pc' render={() => <Pc caughtPokemon={this.props.caughtPokemon.caughtPokemon} addCaughtPokemon={this.props.addCaughtPokemon}/>} />
                     <Redirect to='/kantoPokedex' />
                 </Switch>          
             </div>

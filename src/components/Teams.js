@@ -3,7 +3,7 @@ import {CardImg, Row, Col, Container, Form, Card, Input, Label, FormGroup} from 
 import Select from "react-select";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-function Teams({pokemon, savedTeams, addSavedTeam}){
+function Teams({pokemon, savedTeams, addSavedTeam, caughtPokemon}){
 
     const [selected, setSelected] = useState([]);
     const [selectedTypes, setSelectedTypes] = useState([]);
@@ -50,9 +50,12 @@ function Teams({pokemon, savedTeams, addSavedTeam}){
     const handleCheck3 = () => {
         setCaught(!caught)
     }
+
+    let filteredPokemon = caught?caughtPokemon:pokemon;
+
     const typesSelected = selectedTypes.map(type => type.value) 
     const options = pokemon.map(pokemon => ({...pokemon, value: pokemon.id, label: `${pokemon.name} ${pokemon.number}`}))
-    const filteredOptions = pokemon.filter(pokemon => (pokemon.evolves === evolved || pokemon.evolves === evolves) &&(pokemon.legendary === false || pokemon.legendary === legendary) && pokemon.caught === caught && !typesSelected.includes(pokemon.type[0]) && !typesSelected.includes(pokemon.type[1])).map(pokemon => ({...pokemon, value: pokemon.id, label: `${pokemon.name} ${pokemon.number}`}))
+    const filteredOptions = filteredPokemon.filter(pokemon => (pokemon.evolves === evolved || pokemon.evolves === evolves) &&(pokemon.legendary === false || pokemon.legendary === legendary) && !typesSelected.includes(pokemon.type[0]) && !typesSelected.includes(pokemon.type[1])).map(pokemon => ({...pokemon, value: pokemon.id, label: `${pokemon.name} ${pokemon.number}`}))
     
     const typesArr = ['Bug', 'Dark', 'Dragon','Electric', 'Fairy', 'Fighting', 'Fire', 'Flying', 'Ghost', 'Grass', 'Ground', 'Ice', 'Normal', 'Poison', 'Psychic', 'Rock', 'Steel', 'Water']
     const types = typesArr.map(type => ({label: type, value: type}))
@@ -76,6 +79,7 @@ function Teams({pokemon, savedTeams, addSavedTeam}){
         }
         console.log(filteredOptions)
         console.log(typesSelected)
+        console.log(caughtPokemon)
         setSelected(randomTeam)
         }
     }
@@ -83,9 +87,9 @@ function Teams({pokemon, savedTeams, addSavedTeam}){
     const selectedTeam = selected.map(pokemon => {
         return(
             <Col className="col-lg-2 col-6">
-                <div key={pokemon.id}>
+                <div key={pokemon.named?pokemon.idd:pokemon.id}>
                     <CardImg src={pokemon.image} alt={pokemon.name} className="evoBackground"/>
-                    <h3>{pokemon.name} <br/> {pokemon.number}</h3>   
+                    <h3>{pokemon.named?pokemon.named:pokemon.name} <br/> {pokemon.number}</h3>   
                 </div>
             </Col>
         )
@@ -97,9 +101,9 @@ function Teams({pokemon, savedTeams, addSavedTeam}){
         }
         else{
         return(
-           <li className="list-inline-item" key={pokemon.id}>
+           <li className="list-inline-item" key={pokemon.named?pokemon.idd:pokemon.id}>
                 <CardImg src={pokemon.image} alt={pokemon.name} className="savedTeam"/>
-                <h3>{pokemon.name} <br/> {pokemon.number}</h3>    
+                <h3>{pokemon.named?pokemon.named:pokemon.name} <br/> {pokemon.number}</h3>    
             </li>
         )}})}</li>)}
     )

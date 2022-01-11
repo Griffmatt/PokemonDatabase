@@ -53,7 +53,7 @@ function BattleBox({pokemon, addCaughtPokemon, caughtPokemon}){
 
     const addToTeam = () => {
         const gender = pokemon.gender[Math.floor(Math.random() * pokemon.gender.length)]
-        const pokemonCaught = ({...pokemon, named: pokeName, gendered: gender})
+        const pokemonCaught = ({...pokemon, named: pokeName, gendered: gender, idd: 1000 + caughtPokemon.length})
         addCaughtPokemon(pokemonCaught)
         setIsOpen(false)  
       }

@@ -208,6 +208,10 @@ input {
   height: auto;
 }
 
+.saveTeamBtn:hover{
+  color: #e6e6e6;
+}
+
 .savedTeam{
   background-color: rgba(207, 207, 207, 0.507);
   border-radius:100%;

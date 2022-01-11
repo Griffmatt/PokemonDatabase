@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Container, Row, Col, Card, CardBody, CardHeader, CardImg, CardTitle, CardDeck, Input} from 'reactstrap';
 
-function Pc({caughtPokemon}){
+function Pc({caughtPokemon, addCaughtPokemon}){
 
     const [filter, setFilter] = useState('');
 
